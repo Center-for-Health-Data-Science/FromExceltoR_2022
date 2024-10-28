@@ -1,15 +1,31 @@
 # FromExceltoR
 
-This repository contains the course material for the course `From Excel to R`.
+This repository contains the course material for the 2-day course `From Excel to R`.
 
-Course participants, it would greatly help us if fill out our feedback form (March 2024): <https://forms.office.com/e/4RL8XE0s2C>
+Course participants, it would greatly help us if fill out our feedback form: <https://forms.office.com/e/4RL8XE0s2C>
 
-The course material is originally made by Professor Helle Sørensen and Associate Professor Bo Markussen, SCIENCE data lab, Department of Mathematical Sciences at the University of Copenhagen. Contact: [helle\@math.ku.dk](mailto:helle@math.ku.dk){.email} or [bomar\@math.ku.dk](mailto:bomar@math.ku.dk){.email}
 
-The introduction presentation is made by, and the course material is edited by Thilde Terkelsen, Academic officer, Center for Health Data Science, Faculty of Health and Medical Sciences, University of Copenhagen. Contact: [thilde.terkelsen\@sund.ku.dk](mailto:thilde.terkelsen@sund.ku.dk){.email} or [andrejeva\@sund.ku.dk](mailto:andrejeva@sund.ku.dk){.email}
+#---
+
+This course is hosted by the SUND Data Lab, Center for Health Data Science: 
+Website: https://heads.ku.dk/
+email: datalab@sund.ku.dk
+
+
+Contacts:
+
+Thilde Terkelsen, Special Consultant,
+Center for Health Data Science,
+email: thilde.terkelsen@sund.ku.dk
+
+Henrike Zschach, Special Consultant,
+Center for Health Data Science,
+email: henrike.zschach@sund.ku.dk
+
+#---
 
 The material in this repository is for teaching purposes only and not to be distributed commercially.
 
-## Program March 2024
+## Program
 
 ![image](https://github.com/Center-for-Health-Data-Science/FromExceltoR/blob/2024_Mar/Teachers/images/Program.png)
