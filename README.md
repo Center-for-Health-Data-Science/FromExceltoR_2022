@@ -9,7 +9,8 @@ Course participants, it would greatly help us if fill out our feedback form: <ht
 
 This course is hosted by the SUND Data Lab, Center for Health Data Science:   
 
-Website: https://heads.ku.dk/, Contact: datalab@sund.ku.dk
+Website: https://heads.ku.dk/
+Contact: datalab@sund.ku.dk
 
 
 Contacts:
@@ -18,9 +19,13 @@ Thilde Terkelsen, Special Consultant,
 Center for Health Data Science,
 email: thilde.terkelsen@sund.ku.dk
 
-Henrike Zschach, Special Consultant,
+Helene Wegener, Junior Data Scientist,
 Center for Health Data Science,
-email: henrike.zschach@sund.ku.dk
+email: helene.wegener@sund.ku.dk
+
+Tugce Karadair, Assistant Professor,
+Center for Health Data Science,
+email: tugce.karadair@sund.ku.dk
 
 ---
 
