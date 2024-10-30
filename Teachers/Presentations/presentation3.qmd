@@ -9,7 +9,7 @@ project:
 
 ## Importing libraries and data
 
-```{r}
+```{r, warning=FALSE,message=FALSE}
 library(readxl)
 library(writexl)
 library(tidyverse)
@@ -34,15 +34,16 @@ Making the data more fun to plot.
 
 ```{r}
 # Define 5 colors and their respective ratios
+colors <- c(rep("Red", 40), 
+            rep("Blue", 20), 
+            rep("Yellow",30), 
+            rep("Green", 20),
+            rep("Purple",40))
+
 set.seed(123)  # For reproducibility
-colors <- c(rep("Red", 50),       # 50 rows with Red
-            rep("Blue", 30),      # 30 rows with Blue
-            rep("Yellow", 30),    # 30 rows with Yellow
-            rep("Green", 20),     # 20 rows with Green
-            rep("Purple", 20))    # 20 rows with Purple
 
 # Shuffle the colors to mix them randomly
-colors <- sample(colors)
+colors <- sample(colors, replace = TRUE)
 
 # Add the 'Flower.Color' column to the iris dataset
 iris$Flower.Color <- colors
@@ -163,14 +164,9 @@ p
 # Show p with new labels 
 p + labs(x = 'Flower Color', y = 'Count')
 
-# Show p (nothing has changed)
-p
-
 # Save p with new lables in p (overwrite / reassign)
-p <- p + labs(x = 'Flower Color', y = 'Count')
+p2 <- p + labs(x = 'Flower Color', y = 'Count')
 
-# Show p (lables have changed)
-p 
 ```
 
 Color by species. The bars are stacked by default.
@@ -267,17 +263,21 @@ p <- p + coord_flip()
 
 Since we are working with colors, we can change the colors of the bars to match the groups.
 
+R color chart [here](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)
+
 ```{r}
 # Define color palette
-color_palette <- c("Red" = "red", 
-                   "Blue" = "blue", 
-                   "Yellow" = "yellow", 
-                   "Green" = "green", 
-                   "Purple" = "purple")
+color_palette <- c("Red" = "red3", 
+                   "Blue" = "cornflowerblue", 
+                   "Yellow" = "lightgoldenrod1", 
+                   "Green" = "darkolivegreen2", 
+                   "Purple" = "darkorchid3")
 
 p <- p + 
   aes(fill = Flower.Color) +                # add the fill ascetics 
   scale_fill_manual(values = color_palette) # set the fill color according to the color palette
+
+print(p)
 ```
 
 ## Bar chart with `geom_col`
