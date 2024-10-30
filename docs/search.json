@@ -225,6 +225,102 @@
     ]
   },
   {
+    "objectID": "Exercises/exercises2.html",
+    "href": "Exercises/exercises2.html",
+    "title": "Exercise 2: Tidyverse",
+    "section": "",
+    "text": "Create new Quarto document. For working on the exercise, create a new Quarto document with a descriptive name and save it where you can find it again, i.e. in the folder where you downloaded the teaching material. You can use the commands shown in presentation2.qmd to solve this exercise. There is no shame in outright copying from the presentation2.qmd script, provided you understand what the command is doing.\nLoad packages. You will need to load the packages tidyverse and readxl for this exercise.",
+    "crumbs": [
+      "Course Material",
+      "Exercises 🏋🏽",
+      "Exercise 2: Tidyverse"
+    ]
+  },
+  {
+    "objectID": "Exercises/exercises2.html#setting-up",
+    "href": "Exercises/exercises2.html#setting-up",
+    "title": "Exercise 2: Tidyverse",
+    "section": "",
+    "text": "Create new Quarto document. For working on the exercise, create a new Quarto document with a descriptive name and save it where you can find it again, i.e. in the folder where you downloaded the teaching material. You can use the commands shown in presentation2.qmd to solve this exercise. There is no shame in outright copying from the presentation2.qmd script, provided you understand what the command is doing.\nLoad packages. You will need to load the packages tidyverse and readxl for this exercise.",
+    "crumbs": [
+      "Course Material",
+      "Exercises 🏋🏽",
+      "Exercise 2: Tidyverse"
+    ]
+  },
+  {
+    "objectID": "Exercises/exercises2.html#importing-data-and-a-first-look-at-the-dataset",
+    "href": "Exercises/exercises2.html#importing-data-and-a-first-look-at-the-dataset",
+    "title": "Exercise 2: Tidyverse",
+    "section": "Importing data and a first look at the dataset",
+    "text": "Importing data and a first look at the dataset\nThe data set used in these exercises was compiled from data downloaded from the website of the UK’s national weather service, the Met Office. It is saved in the file climate.xlsx1 which can be found in the folder Exercises/Data/. The spreadsheet contains monthly data from five UK weather stations for the following variables:\n\n\n\nVariable name\nExplanation\n\n\n\n\nstation\nLocation of weather station\n\n\nyear\nYear\n\n\nmonth\nMonth\n\n\naf\nDays of air frost\n\n\nrain\nRainfall in mm\n\n\nsun\nSunshine duration in hours\n\n\ndevice\nBrand of sunshine recorder / sensor\n\n\n\n\nLoad data. Start by importing the dataset using either the read_excel() function or the Import Dataset button and name it climate. If you load with Import Dataset it is a good idea to copy the command into your script so that the next time you run your script you can just execute that line instead of having to find the file again.\nFirst look at data. Write the name of the dataframe, i.e. climate, into the console and press enter to see the first rows of the dataset. You can also click on the climate object in the Environment panel.\nExplore your dataset and understand what data you have.\n\nHow many observations, i.e. rows are there?\nHow many data columns are there and what are their types?\nWhat is the information in each row and column?\nHow many different stations are there?\nHow many rows per station?",
+    "crumbs": [
+      "Course Material",
+      "Exercises 🏋🏽",
+      "Exercise 2: Tidyverse"
+    ]
+  },
+  {
+    "objectID": "Exercises/exercises2.html#working-with-the-data",
+    "href": "Exercises/exercises2.html#working-with-the-data",
+    "title": "Exercise 2: Tidyverse",
+    "section": "Working with the data",
+    "text": "Working with the data\nBefore you proceed with the exercises in this document, make sure you load the tidyverse in order to use the functions from this package.\n\nCount the number of rows that did not have any days with air frost.\nCount the number of rows per station that did not have any days with air frost.\nSelect from the climate dataset (remember to filter rows and select columns):\n\nall rows from the station in Oxford\nall rows from the station in Oxford when there were at least 100 hours of sunlight\nall rows from the stations in Oxford and Camborne when there were at least 100 hours of sunlight\na subset that only contains the station, year and rain columns\n\n\nThe next few questions build on each other, each adding a piece of code:\n\nCompute the average rainfall over the full dataset by using the summarize function. You can look at the examples we did at the end of presentation 2.\nNow, compute the average rainfall, standard deviation of the rainfall and the total rainfall (the sum) on the full dataset. I.e. all three measures should be inside the same resulting table. Have a look at the tidyverse lecture if you have trouble with this.\nNow, use group_by before summarize in order to compute group summary statistics (average, standard deviation, and sum) but split up into each of the five weather stations.\nInclude a column in the summary statistics which shows how many observations, i.e. rows, the data set contains for each station.\nSort the rows in the output in descending order according to average annual rainfall.",
+    "crumbs": [
+      "Course Material",
+      "Exercises 🏋🏽",
+      "Exercise 2: Tidyverse"
+    ]
+  },
+  {
+    "objectID": "Exercises/exercises2.html#manipulating-the-data",
+    "href": "Exercises/exercises2.html#manipulating-the-data",
+    "title": "Exercise 2: Tidyverse",
+    "section": "Manipulating the data",
+    "text": "Manipulating the data\n\nCreate a new column in climate and save the new dataset in a different variable so you don’t overwrite your original climate data. The new column should count the number of days in each month without air frost, based on the existing af column. For this exercise, assume each month has 30 days. To find the number of days without air frost, subtract the value in the af column from 30.\nAdd another column to your new dataset that says whether the weather this month was good. We consider a month to be good if it had at least 100 hours of sunshine and less than 100 mm of rain. Otherwise the weather was bad.\nHow many months are there with good weather (use the column you made in 14) for each station? Find the station that has the most months with good weather.",
+    "crumbs": [
+      "Course Material",
+      "Exercises 🏋🏽",
+      "Exercise 2: Tidyverse"
+    ]
+  },
+  {
+    "objectID": "Exercises/exercises2.html#complex-operations",
+    "href": "Exercises/exercises2.html#complex-operations",
+    "title": "Exercise 2: Tidyverse",
+    "section": "Complex operations",
+    "text": "Complex operations\nThe final questions require that you combine commands and variables of the type above.\n\nFor each weather station apart from the one in Armagh, compute the total rainfall and sunshine duration for months that had no days of air frost. Present the totals in centimetres and days, respectively.\nIdentify the weather station for which the median number of monthly sunshine hours over the months April to September was largest.",
+    "crumbs": [
+      "Course Material",
+      "Exercises 🏋🏽",
+      "Exercise 2: Tidyverse"
+    ]
+  },
+  {
+    "objectID": "Exercises/exercises2.html#wrapping-up",
+    "href": "Exercises/exercises2.html#wrapping-up",
+    "title": "Exercise 2: Tidyverse",
+    "section": "Wrapping up",
+    "text": "Wrapping up\n\nLike in the last exercise; imagine you need to send your code to a collaborator. Review your code to ensure it is clear and well-structured, so your collaborator can easily understand and follow your work. Render your Quarto document and look at the result.",
+    "crumbs": [
+      "Course Material",
+      "Exercises 🏋🏽",
+      "Exercise 2: Tidyverse"
+    ]
+  },
+  {
+    "objectID": "Exercises/exercises2.html#footnotes",
+    "href": "Exercises/exercises2.html#footnotes",
+    "title": "Exercise 2: Tidyverse",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nContains public sector information licensed under the Open Government Licence v3.0.↩︎",
+    "crumbs": [
+      "Course Material",
+      "Exercises 🏋🏽",
+      "Exercise 2: Tidyverse"
+    ]
+  },
+  {
     "objectID": "Exercises/exercises1.html",
     "href": "Exercises/exercises1.html",
     "title": "Exersice 1: Introduction",
@@ -418,7 +514,7 @@
     "href": "Presentations/presentation2.html#check-working-directory",
     "title": "Presentation 2: Tidyverse",
     "section": "Check working directory",
-    "text": "Check working directory\nCheck working directory so you know from where you work.\n\ngetwd()\n\n[1] \"/Users/kgx936/Desktop/HeaDS/GitHub_repos/FromExceltoR/Teachers/Presentations\"",
+    "text": "Check working directory\nCheck working directory so you know from where you work.\n\ngetwd()\n\n[1] \"/Users/srz223/Desktop/DataLab/FromExceltoR/Teachers/Presentations\"",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",
@@ -570,47 +666,11 @@
     ]
   },
   {
-    "objectID": "Presentations/presentation1.html#introduction",
-    "href": "Presentations/presentation1.html#introduction",
-    "title": "Presentation 1: Introduction",
-    "section": "",
-    "text": "I. The Fundamentals of R (R codes for presentation)\nCenter for Health Data Science, University of Copenhagen\nThese files are generated by the Quarto file presentation1.qmd",
-    "crumbs": [
-      "Course Material",
-      "Presentations 👩🏽‍🏫",
-      "Presentation 1: Introduction"
-    ]
-  },
-  {
-    "objectID": "Presentations/presentation1.html#the-quarto-way",
-    "href": "Presentations/presentation1.html#the-quarto-way",
-    "title": "Presentation 1: The Fundamentals of R and Quarto",
-    "section": "",
-    "text": "Quarto works with markup language. A markup language is a text-coding system which specifies the structure and formatting of a document and the relationships among its parts. Markup languages control how a document is displayed. Markdown is a lightweight markup language for creating formatted text using a plain-text editor another example of a markup language is LaTex.\nLets see how a markup language works:",
-    "crumbs": [
-      "Course Material",
-      "Presentations 👩🏽‍🏫",
-      "Presentation 1: Introduction"
-    ]
-  },
-  {
-    "objectID": "Presentations/presentation1.html#this-is-the-second-largest-header-header-2",
-    "href": "Presentations/presentation1.html#this-is-the-second-largest-header-header-2",
-    "title": "Presentation 1: The Fundamentals of R and Quarto",
-    "section": "This is the second largest header (Header 2)",
-    "text": "This is the second largest header (Header 2)\n\nThis is the smallest header (Header 6)\nThis is normal text. Yes it is larger than the smallest header. A Quarto document works like a word document where we can write with bold or italic and insert thing like a table:\n\n\n\nMy friends\nTheir favorite drink\nTheir favorite food\n\n\n\n\nMicheal\nBeer\nBurger\n\n\nJane\nWine\nLasagne\n\n\nRobert\nWater\nSalad\n\n\n\n… a picture:\n\n\n\n\n\n\n\nThis is a cute cat\n\n\nWe can also make a list of things we like:\n\nCoffee\nCake\nWater\nFruit",
-    "crumbs": [
-      "Course Material",
-      "Presentations 👩🏽‍🏫",
-      "Presentation 1: Introduction"
-    ]
-  },
-  {
-    "objectID": "Presentations/presentation1.html#modes-of-quarto",
-    "href": "Presentations/presentation1.html#modes-of-quarto",
-    "title": "Presentation 1: Introduction",
-    "section": "Modes of Quarto",
-    "text": "Modes of Quarto\nThere are two modes of Quarto: Source and Visual. The one that looks like Word is Visual. In the left part of the panel you can change to Source. If you have heard about Rmarkdown, the Source mode is essentially the same thing. Here you can see that headers are marked with hashtags. The more hashtags, the smaller the title. Some features can only be added when you are in Source mode. E.g write blue text is coded like this in the source code [write blue text]{style=\"color:blue\"}. We will mostly spend time in the Visual mode since it is the nicest to look at. Feel free to explore the Source mode at the end of the exercises!",
+    "objectID": "Presentations/presentation1.html#modes-of-quarto-document",
+    "href": "Presentations/presentation1.html#modes-of-quarto-document",
+    "title": "Presentation 1: R, Rstudio and Quarto",
+    "section": "Modes of Quarto Document",
+    "text": "Modes of Quarto Document\nThere are two modes of Quarto: Source and Visual. In the left part of the panel you can change between the two modes.\nSome features can only be added when you are in Source mode. E.g write blue text is coded like this in the source code [write blue text]{style=\"color:blue\"}.",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",
@@ -630,11 +690,11 @@
     ]
   },
   {
-    "objectID": "Presentations/presentation1.html#alter-output-of-code-chunks",
-    "href": "Presentations/presentation1.html#alter-output-of-code-chunks",
-    "title": "Presentation 1: Introduction",
-    "section": "Alter output of code chunks",
-    "text": "Alter output of code chunks\nYou don’t need this but it might be a good feature for your later R carrer.\nControl whether code is executed. eval=FALSE not execute the code and eval=TRUE will execute the code. Default is TRUE.\nThe code is shown, but the result is not shown ({r, echo=TRUE, eval=FALSE}):\n\n1+3\n\nShow or hide code. echo=FALSE will hide the code and echo=TRUE will show the code. Default is TRUE.\nThe code is not shown, but the result is shown ({r, echo=FALSE, eval=TRUE}):\n\n\n[1] 4\n\n\nControl messages, warnings and errors. Maybe you have a code chunk that you know will produce one of the three and you don’t want to look at it. It is not a good idea to hide these statements (especially the errors) before you know what they are. But in a report, it might be nice to be able to mute the messages or the warnings.\nWarning is not printed ({r, message=FALSE, warning=FALSE, error=TRUE}):\n\nlog(-1)\n\n[1] NaN\n\n\nWarning is printed ({r message=TRUE, warning=TRUE, error=TRUE}):\n\nlog(-1)\n\nWarning in log(-1): NaNs produced\n\n\n[1] NaN",
+    "objectID": "Presentations/presentation1.html#output-of-code-chunks",
+    "href": "Presentations/presentation1.html#output-of-code-chunks",
+    "title": "Presentation 1: R, Rstudio and Quarto",
+    "section": "Output of code chunks",
+    "text": "Output of code chunks\nControl whether code is executed. eval=FALSE not execute the code and eval=TRUE will execute the code.\nThe code is shown, but the result is not shown ({r, echo=TRUE, eval=FALSE}):\n\n1+3\n\nShow or hide code. echo=FALSE will hide the code and echo=TRUE will show the code. Default is TRUE.\nThe code is not shown, but the result is shown ({r, echo=FALSE, eval=TRUE}):\n\n\n[1] 4\n\n\nControl messages, warnings and errors. Maybe you have a code chunk that you know will produce one of the three and you often don’t want to see it in the compiled document. N.B! It is not a good idea to hide these statements (especially the errors) before you know what they are.\nWarning is not printed ({r, message=FALSE, warning=FALSE, error=TRUE}):\n\nlog(-1)\n\n[1] NaN\n\n\nWarning is printed ({r message=TRUE, warning=TRUE, error=TRUE}):\n\nlog(-1)\n\nWarning in log(-1): NaNs produced\n\n\n[1] NaN",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",
@@ -658,7 +718,7 @@
     "href": "Presentations/presentation1.html#working-directory",
     "title": "Presentation 1: R, Rstudio and Quarto",
     "section": "Working directory",
-    "text": "Working directory\nThe term path refers to the trajectory you need to follow from the place you are ‘located’ on your computer to the place you want to work from. When working with Quarto your working directory (wd) is always the same locations as your Quarto document (is not true for .R scripts!). The wd becomes important when we start loading data in from other places (presentation 2).\nWhere am I now? getwd()\n\ngetwd()\n\n[1] \"/Users/kgx936/Desktop/HeaDS/GitHub_repos/FromExceltoR/Teachers/Presentations\"\n\n\nSet working directory, setwd()\nThe working directory can changed BUT when working with Quarto this only influences individual code chunks. In opposition, a changing of wd within an .R script affects the document globally - we will not cover .R scripts in this course.\nThere are two type of paths, absolute paths (from root to desired location) and relative paths (from current location to desired location):\nAbsolute path:\n\nsetwd(\"/Users/kgx936/Desktop/HeaDS/GitHub_repos/FromExceltoR\")\n\nRelative path:\n\nsetwd('./Exercises/')\n\nNavigate up in the directory tree (..)\n\nsetwd('../Teachers')\n\nPointing to a dataset\n\nload('/Users/kgx936/Desktop/HeaDS/GitHub_repos/FromExceltoR/Data/MyData.Rdata')",
+    "text": "Working directory\nThe term path refers to the trajectory you need to follow from the place you are ‘located’ on your computer to the place you want to work from. When working with Quarto your working directory (wd) is always the same locations as your Quarto document (is not true for .R scripts!). The wd becomes important when we start loading data in from other places (presentation 2).\nWhere am I now? getwd()\n\ngetwd()\n\n[1] \"/Users/srz223/Desktop/DataLab/FromExceltoR/Teachers/Presentations\"\n\n\nSet working directory, setwd()\nThe working directory can changed BUT when working with Quarto this only influences individual code chunks. In opposition, a changing of wd within an .R script affects the document globally - we will not cover .R scripts in this course.\nThere are two type of paths, absolute paths (from root to desired location) and relative paths (from current location to desired location):\nAbsolute path:\n\nsetwd(\"/Users/kgx936/Desktop/HeaDS/GitHub_repos/FromExceltoR\")\n\nRelative path:\n\nsetwd('./Exercises/')\n\nNavigate up in the directory tree (..)\n\nsetwd('../Teachers')\n\nPointing to a dataset\n\nload('/Users/kgx936/Desktop/HeaDS/GitHub_repos/FromExceltoR/Data/MyData.Rdata')",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",
@@ -988,100 +1048,25 @@
     ]
   },
   {
-    "objectID": "Exercises/exercises2.html",
-    "href": "Exercises/exercises2.html",
-    "title": "Exercise 2: Tidyverse",
+    "objectID": "Exercises/exercises5_PART2.html",
+    "href": "Exercises/exercises5_PART2.html",
+    "title": "V. Applied Statistics in R (Exercises Part 2)",
     "section": "",
-    "text": "Create new Quarto document. For working on the exercise, create a new Quarto document with a descriptive name and save it where you can find it again, i.e. in the folder where you downloaded the teaching material. You can use the commands shown in presentation2.qmd to solve this exercise. There is no shame in outright copying from the presentation2.qmd script, provided you understand what the command is doing.\nLoad packages. You will need to load the packages tidyverse and readxl for this exercise.",
-    "crumbs": [
-      "Course Material",
-      "Exercises 🏋🏽",
-      "Exercise 2: Tidyverse"
-    ]
+    "text": "Except for the last two parts, this exercise is about analysis with so-called Gaussian linear models. This is the class of models where data points are assumed to be independent, Gaussian (i.e. with a normal distribution) and with the same variance. All such models are fitted with the lm function in R, like so:\nlm(y~x, data = my.data)\nThe term regression is usually used for models where all explanatory variables are numerical, whereas the term analysis of variance (ANOVA) is usually used for models where all explanatory variables are categorical (i.e. factors). However, predictors of both types can be included in the same Gaussian linear model. In the end, we are also concerned with logistic regression models (for binary outcomes e.g. cases vs. controls) and linear mixed models (for data with a block structure).\nThe purpose of this exercise is to show how to fit and work with statistical models in R. This means that the analyses are not necessarily those that should be used in a real-life analysis of the data.\nStart with the Data part. The later parts are almost independent of each other, so you can choose the parts that are most appropriate for you. However, not all statistical concepts are studied in all the parts present.\n\nData\nThe dataset to be used is about risk factors associated with low infant birth weight. The data are available in the R-package MASS (part of base R, so it is installed automatically) as a data frame called birthwt. If nothing else is mentioned, then use the infants’s birth weight, bwt, as outcome (response).\n\nUse the commands below to load the MASS package and get the help page for the data frame. The help page will appear in the lower right window of RStudio. Read about the data; in particular about the variables age, lwt, ftv, smoke, and bwt.\n\n\nlibrary(MASS)\n?birthwt\n\n\nbirthwt is not a tibble (the modern way to organize data), but we can make it one:\n\n\nlibrary(tidyverse)    \nbirthData &lt;- as_tibble(birthwt)\nbirthData\n\n\nMother’s smoking habits (smoke) is coded as numerical variable. Make it a factor (categorical variable).\nThe ftv is a numerical variable, but we would also like a categorical version of it, with groups corresponding to zero visits, one visit, and two or more visits, respectively. Try the following commands, and check the results:\n\n\ntable(birthData$ftv)\nbirthData &lt;- mutate(birthData, ftvFac = factor(ftv))\nbirthData &lt;- mutate(birthData, visits = fct_collapse(ftvFac, Never=\"0\", Once=\"1\", other_level=\"MoreThanOnce\"))\nsummary(birthData)\n\n\nMake groupwise boxplots of bwt by visits, i.e., boxplots of birth weight for those women who did not see their doctor, those who saw their doctor once, and those who saw their doctor more than once during the first trimester - all boxplots in one graph. Do the same thing for smoke (instead of visits).\nYou may also make groupwise boxplots for each combination of smoke and visits. You add a combination term with a :, e.g. smoke:visits. What is your initial impression about potential associations?\nMake a scatterplot with lwt on the \\(x\\)-axis and bwt on the \\(y\\)-axis. Modify the plot such that points are coloured according to visits.\nModify it further such that the symbol types are different for smokers and non-smokers. This is done by adding pch=smoke.\n\n\n\nRegression\nThe term regression is usually used for models where all explanatory variables are numerical.\nIf you are not too familiar with linear regression, you can have a look at what the summary() output means here and for understanding regression plot(), have a look here.\n\nFit a linear regression model with bwt as response and lwt as covariate, and identify the estimates for the intercept and for the slope. Find the 95% confidence interval for the slope parameter by using the confint() function.\nJust by calling plot() on your regression model you made you can carry out model validation. Does the model seem appropriate for the data?\nFit the multiple linear regression model where you include lwt as well as age and ftv (numerical variables) as covariates. Identify the parameter estimates, and consider what their interpretation is.\nTry the following commands, and see if you can figure out what the outcome means. You should replace reg2 with the name of the model object from the previous question.\n\n\nnewData &lt;- data.frame(lwt=100, age=25, ftv=0)\nnewData\npredict(reg2, newData)\npredict(reg2, newData, interval=\"prediction\")\n\n\nFit the multiple linear regression model again, but now only using data from mothers with a weight less than 160 pounds (lwt &lt; 160). Hint: Use the filter function and change the data argument in the lm command.\n\n\n\nANOVA\nThe term analysis of variance (ANOVA) is usually used for models where all explanatory variables are categorical (factors). It is important that you have coded smoke as a factor, cf. Question 3.\nFirst, install and load the R-package emmeans.\n\nlibrary(emmeans)    \n\nWelcome to emmeans.\nCaution: You lose important information if you filter this package's results.\nSee '? untidy'\n\n\n\nFit the oneway ANOVA (with lm) where the expected value of bwt is allowed to differ between smokers and non-smokers. Find the estimated birth weight for infants from smokers as well as non-smokers. Is there significant difference between smokers and non-smokers when it comes to infant’s birth weight? Hints: Use summary() and the emmeans() function from the emmeans R-package. N.B make sure you know what needs to go into the function, use ?.\nFit the oneway ANOVA where you use visits as the explanatory variable. Find the estimated birth weight for each group, and make the pairwise comparisons between the groups. Furthermore, carry out the \\(F\\)-test for the overall comparison of the three levels.\nHint drop1(, test=\"F\"). What is the conclusion?\nNow, consider both visits and smoke as explanatory variables. Since they are both categorical variables (factors), the relevant model is a twoway ANOVA. Fit the twoway ANOVA model without interaction, and make sure you understand the estimates:\n\n\ntwoway1 &lt;- lm(bwt ~ visits + smoke, data=birthData)\nsummary(twoway1)\n\n\nFit the twoway ANOVA model with interaction (use the command below). Then use anova and/or drop1 to test if the interaction between visits and smoking habits is statistically significant.\n\n\ntwoway2 &lt;- lm(bwt ~ visits * smoke, data=birthData)\n\n\nYou should still use twoway2 in for this question. Use emmeans to compute the expected birth weight of infants for smokers and non-smokers, respectively, on average over the three levels of visits.\n\n\n\nModels with numerical as well as categorical predictors\nPredictors of any type can be included in Gaussian linear models, still using lm.\n\nFit a model where lwt (numeric) and smoke (factor) are included as predictors in an additive way:\n\n\nmodel1 &lt;- lm(bwt ~ lwt + smoke, data=birthData)\nsummary(model1)\n\nWhat is the interpretation of the estimates?\n\nFit a model with interaction between the two predictors, replacing + by a *:\n\n\nmodel2 &lt;- lm(bwt ~ lwt * smoke, data=birthData)\nsummary(model2)\n\nWhat is the interpretation of the estimates? Is there evidence in the data that the effect of mother’s weight on infant’s weight differs between smokers and non-smokers? Hint: What does the last question have to do with interaction? Use anova on appropriate models.\n\nFit the model with additive effects of mothers’s weight, smoking status, age, and visit status, and carry out model validation. Give an interpretation of the estimate associated to smoke. Does smoking affect the weight of infants?\n\n\n\nLogistic regression\nThe variable low is 1 if birth weight is less than 2500 g, and 0 if birth weight is larger than 2500g, see the plot\n\nggplot(birthData, aes(x=bwt, y=low)) + geom_point()\n\nConsider for a moment the situation where the actual birth weight (bwt) was not registered, such that low was the only information on the child. Hence, the outcome is binary (low has two values), and the relevant analysis would be a logistic regression where the probablity \\(Pr(low=1)\\) is described in terms of predictors. For example, we may consider a model with mothers’s weight, smoking status, age, and visit status as predictors, just like in the previous question.\n\nFit the model, and consider the estimates:\n\n\nlogreg1 &lt;- glm(low ~ lwt + smoke + age + visits, data=birthData, family=\"binomial\")\nsummary(logreg1)\n\nDoes this model give evidence for an effect of smoking on the weight of infants? Compare the signs of the estimates from model3 (Gaussian model in the solution for Question 18) and logreg1 (logistic regression model). Can you explain ‘what happens’?\n\n\nLinear mixed models\n\nAssume for a moment that the 189 births took place at 19 different medical centers with 10 births at each center, except for one center with only nine births. This is not the case, so we have to generate a center variable artificially. You should of course never invent such an artificial structure for a real dataset! Anyway, let’s do it like this:\n\n\nset.seed(123)\ncenter &lt;- sample(rep(1:19, each=10)[1:189])\ncenter\nbirthData &lt;- mutate(birthData,center=factor(center))\n\nThe rep command repeats the number from 1 to 19, 10 times each. We only need the first 189 numbers. The sample changes the order of the 189 numbers at random. The set.seed command has the effect that you get the same sample each time you run the commands. The last line includes the new variable in the original dataset as a categorical variable.\n\nThe center variable would typically be included in the model as a random effect. Gaussian models with both fixed and random effects are called linear mixed models, and are fitted with the lmer function from the lme4 package. Run the code below and identify relevant estimates. Remember that lme4 must be installed before the commands below can be used.\n\n\nlibrary(lme4)\nlmm1 &lt;- lmer(bwt ~ lwt + smoke + age + visits + (1|center), data=birthData)\nsummary(lmm1)"
   },
   {
-    "objectID": "Exercises/exercises2.html#setting-up",
-    "href": "Exercises/exercises2.html#setting-up",
-    "title": "Exercise 2: Tidyverse",
-    "section": "",
-    "text": "Create new Quarto document. For working on the exercise, create a new Quarto document with a descriptive name and save it where you can find it again, i.e. in the folder where you downloaded the teaching material. You can use the commands shown in presentation2.qmd to solve this exercise. There is no shame in outright copying from the presentation2.qmd script, provided you understand what the command is doing.\nLoad packages. You will need to load the packages tidyverse and readxl for this exercise.",
-    "crumbs": [
-      "Course Material",
-      "Exercises 🏋🏽",
-      "Exercise 2: Tidyverse"
-    ]
+    "objectID": "Exercises/exercises5_PART1.html#structure-of-a-biostatistical-analysis-in-r",
+    "href": "Exercises/exercises5_PART1.html#structure-of-a-biostatistical-analysis-in-r",
+    "title": "V. Applied Statistics in R (Exercises Part 1)",
+    "section": "Structure of a biostatistical analysis in R",
+    "text": "Structure of a biostatistical analysis in R\nWhen done with this exercise, please write 1-2 sentences about your final conclusion(s) on the association between GeneD expression and psoriasis here (One post per group): https://ucph.padlet.org/tugcekaraderi/x8ybz5n8ilzbqnm2\nThe very basic structure of an R script doing a classical statistical analysis is as follows:\n\nLoad packages that you will be using.\n\nRead the dataset to be analyzed. Possibly also do some data cleaning and manipulation.\n\nVisualize the dataset by graphics and other descriptive statistics.\n\nFit and validate a statistical model.\n\nHypothesis testing. Possibly also post hoc testing.\n\nOf course there are variants of this set-up, and in practice there will often be some iterations of the steps.\nIn this manuscript we will exemplify the proposed steps in the analysis of a simple dataset:\n\nIn our current scenario, you are a researcher investigating psoriasis, an inflammatory skin disease. You have data on the expression of a number genes that are suspected to have something to do with the disease, but you cannot be sure until you perform some formal statistical analysis.\nThis is a great example where R skills would come very handy!\nYou will investigate your gene of special interest GeneD (a hypothetical gene in this case).\nYou decide that your analysis approach will be one-way ANOVA of the expression of GeneD against the skin type in psoriasis patients.\n\n\nLoad packages\nWe will use ggplot2 to make plots, and to be prepared for data manipulations, we simply load this together with the rest of the tidyverse.\nThe psoriasis data are provided in an Excel sheet, so we also load readxl. Finally, we will use the package emmeans to make post hoc tests.\nRemember that you should install the wanted packages before they can be used (but you only need to install the packages once!).\nThus,\n\n#install.packages(\"tidyverse\")\n#install.packages(\"readxl\")\n#install.packages(\"emmeans\")\nlibrary(tidyverse)\nlibrary(readxl)\nlibrary(emmeans)\n\nNow, we are done preparing for our analyses. Next, we will look specifically at the possible association between GeneD expression and psoriasis.\nPlease refer to the ‘STATS CHEAT SHEET’ provided in the slides for hints as well as other cheat sheets provided in other sessions where necessary."
   },
   {
-    "objectID": "Exercises/exercises2.html#importing-data-and-a-first-look-at-the-dataset",
-    "href": "Exercises/exercises2.html#importing-data-and-a-first-look-at-the-dataset",
-    "title": "Exercise 2: Tidyverse",
-    "section": "Importing data and a first look at the dataset",
-    "text": "Importing data and a first look at the dataset\nThe data set used in these exercises was compiled from data downloaded from the website of the UK’s national weather service, the Met Office. It is saved in the file climate.xlsx1 which can be found in the folder Exercises/Data/. The spreadsheet contains monthly data from five UK weather stations for the following variables:\n\n\n\nVariable name\nExplanation\n\n\n\n\nstation\nLocation of weather station\n\n\nyear\nYear\n\n\nmonth\nMonth\n\n\naf\nDays of air frost\n\n\nrain\nRainfall in mm\n\n\nsun\nSunshine duration in hours\n\n\ndevice\nBrand of sunshine recorder / sensor\n\n\n\n\nLoad data. Start by importing the dataset using either the read_excel() function or the Import Dataset button and name it climate. If you load with Import Dataset it is a good idea to copy the command into your script so that the next time you run your script you can just execute that line instead of having to find the file again.\nFirst look at data. Write the name of the dataframe, i.e. climate, into the console and press enter to see the first rows of the dataset. You can also click on the climate object in the Environment panel.\nExplore your dataset and understand what data you have.\n\nHow many observations, i.e. rows are there?\nHow many data columns are there and what are their types?\nWhat is the information in each row and column?\nHow many different stations are there?\nHow many rows per station?",
-    "crumbs": [
-      "Course Material",
-      "Exercises 🏋🏽",
-      "Exercise 2: Tidyverse"
-    ]
-  },
-  {
-    "objectID": "Exercises/exercises2.html#working-with-the-data",
-    "href": "Exercises/exercises2.html#working-with-the-data",
-    "title": "Exercise 2: Tidyverse",
-    "section": "Working with the data",
-    "text": "Working with the data\nBefore you proceed with the exercises in this document, make sure you load the tidyverse in order to use the functions from this package.\n\nCount the number of rows that did not have any days with air frost.\nCount the number of rows per station that did not have any days with air frost.\nSelect from the climate dataset (remember to filter rows and select columns):\n\nall rows from the station in Oxford\nall rows from the station in Oxford when there were at least 100 hours of sunlight\nall rows from the stations in Oxford and Camborne when there were at least 100 hours of sunlight\na subset that only contains the station, year and rain columns\n\n\nThe next few questions build on each other, each adding a piece of code:\n\nCompute the average rainfall over the full dataset by using the summarize function. You can look at the examples we did at the end of presentation 2.\nNow, compute the average rainfall, standard deviation of the rainfall and the total rainfall (the sum) on the full dataset. I.e. all three measures should be inside the same resulting table. Have a look at the tidyverse lecture if you have trouble with this.\nNow, use group_by before summarize in order to compute group summary statistics (average, standard deviation, and sum) but split up into each of the five weather stations.\nInclude a column in the summary statistics which shows how many observations, i.e. rows, the data set contains for each station.\nSort the rows in the output in descending order according to average annual rainfall.",
-    "crumbs": [
-      "Course Material",
-      "Exercises 🏋🏽",
-      "Exercise 2: Tidyverse"
-    ]
-  },
-  {
-    "objectID": "Exercises/exercises2.html#manipulating-the-data",
-    "href": "Exercises/exercises2.html#manipulating-the-data",
-    "title": "Exercise 2: Tidyverse",
-    "section": "Manipulating the data",
-    "text": "Manipulating the data\n\nCreate a new column in climate and save the new dataset in a different variable so you don’t overwrite your original climate data. The new column should count the number of days in each month without air frost, based on the existing af column. For this exercise, assume each month has 30 days. To find the number of days without air frost, subtract the value in the af column from 30.\nAdd another column to your new dataset that says whether the weather this month was good. We consider a month to be good if it had at least 100 hours of sunshine and less than 100 mm of rain. Otherwise the weather was bad.\nHow many months are there with good weather (use the column you made in 14) for each station? Find the station that has the most months with good weather.",
-    "crumbs": [
-      "Course Material",
-      "Exercises 🏋🏽",
-      "Exercise 2: Tidyverse"
-    ]
-  },
-  {
-    "objectID": "Exercises/exercises2.html#complex-operations",
-    "href": "Exercises/exercises2.html#complex-operations",
-    "title": "Exercise 2: Tidyverse",
-    "section": "Complex operations",
-    "text": "Complex operations\nThe final questions require that you combine commands and variables of the type above.\n\nFor each weather station apart from the one in Armagh, compute the total rainfall and sunshine duration for months that had no days of air frost. Present the totals in centimetres and days, respectively.\nIdentify the weather station for which the median number of monthly sunshine hours over the months April to September was largest.",
-    "crumbs": [
-      "Course Material",
-      "Exercises 🏋🏽",
-      "Exercise 2: Tidyverse"
-    ]
-  },
-  {
-    "objectID": "Exercises/exercises2.html#wrapping-up",
-    "href": "Exercises/exercises2.html#wrapping-up",
-    "title": "Exercise 2: Tidyverse",
-    "section": "Wrapping up",
-    "text": "Wrapping up\n\nLike in the last exercise; imagine you need to send your code to a collaborator. Review your code to ensure it is clear and well-structured, so your collaborator can easily understand and follow your work. Render your Quarto document and look at the result.",
-    "crumbs": [
-      "Course Material",
-      "Exercises 🏋🏽",
-      "Exercise 2: Tidyverse"
-    ]
-  },
-  {
-    "objectID": "Exercises/exercises2.html#footnotes",
-    "href": "Exercises/exercises2.html#footnotes",
-    "title": "Exercise 2: Tidyverse",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nContains public sector information licensed under the Open Government Licence v3.0.↩︎",
-    "crumbs": [
-      "Course Material",
-      "Exercises 🏋🏽",
-      "Exercise 2: Tidyverse"
-    ]
+    "objectID": "Exercises/exercises5_PART1.html#example-analysis-of-variance",
+    "href": "Exercises/exercises5_PART1.html#example-analysis-of-variance",
+    "title": "V. Applied Statistics in R (Exercises Part 1)",
+    "section": "Example: Analysis of variance",
+    "text": "Example: Analysis of variance\n\nStep 1: Data\nPsoriasis is an immune-mediated disease that affects the skin. You, as a researcher, carried out a micro-array experiment with skin from 37 people in order to examine a potential association between the disease and a certain gene (GeneD). For each of the 37 samples the gene expression was measured. 15 skin samples were from psoriasis patients and from a part of the body affected by the disease (psor); 15 samples were from psoriasis patients but from a part of the body not affected by the disease (psne); and 7 skin samples were from healthy people (control).\nThe data are saved in the file psoriasis.xlsx. At first the variable named type (i.e. skin sample type) is stored as a character variable, we change it to a factor (and check that indeed there are 15, 15 and 7 skin samples in the three groups).\n\n# Read in the data from Excel file and call it psoriasisData\n\n\n# View the top rows of the dataset\n\n\n# Extract the data of interest containing GeneD expression levels and skin sample type from the dataset and call this subset psorData\n\n\n# View the top rows of the dataset psorData\n\n\n# Change variable named 'type' to factor so that we can use in our analysis in the next steps\n# First let's check if it is character\n\n# Now change to factor\n\n# Again, let's check if it is factor now\n\n\n# Check that there are 15, 15 and 7 skin samples in the three groups. Hint: summary()\n\nQUESTION 1: Are there 15, 15 and 7 skin samples in the three groups?\n\n\nStep 2: Descriptive plots and statistics\nTo get an impression of the data, we make two plots, and compute group-wise means and standard deviations. Make (1) a plot showing three groups of skin samples (healthy, psne, psor) and GeneD expression levels from each skin sample so that we can visually compare each group of samples with regards to GeneD expression levels; (2) a boxplot for the same group-wise comparison. And finally, obtain the group-wise (healthy, psne, psor) descriptive statistics (mean, median and standard deviation). Hint: Consider using ggplot and tidyverse!\n\n# (1) a plot showing three groups of skin samples (healthy, psne, psor) and GeneD expression levels from each skin sample\n\n\n# (2) a boxplot for the same group-wise comparison. Hint: geom_boxplot()\n\n\n# And finally, obtain the group-wise (healthy, psne, psor) descriptive statistics (mean, median and standard deviation). Hint: group_by()\n\nQUESTION 2: Please rank the three groups by their mean/average GeneD expression (descending order). Just visually assess the values and write down the order of the groups.\n\n\nStep 3: Fit of oneway ANOVA, model validation\nThe scientific question is whether the gene expression level of GeneD differs between the three types/groups. Thus, the natural type of analysis is a oneway analysis of variance (ANOVA). The oneway ANOVA is fitted with the lm() function in R. It is a good approach to assign a name (below oneway) to the object with the fitted model. This object contains all relevant information and may be used for subsequent analysis. Note that we need to logarithmic transform the response (i.e. GeneD expression levels) as intensities are often on a multiplicative scale.\n\n# oneway analysis of variance (ANOVA)\n\n\n# View the model coefficients\n\nQUESTION 3: Are you done? Please share how you feel with your group!\n\n\nStep 4: Hypothesis test + Post hoc tests\nIt is standard to carry out an \\(F\\)-test for the overall effect of the explanatory (i.e. independent) variable. To be precise, the hypothesis is that the expected values are the same in all groups. The most easy way to do this test is to use drop1. The option test=\"F\" is needed to get the \\(F\\)-test using that function:\n\n# Carry out an $F$-test for the overall effect of the explanatory (i.e. independent) variable\n\nQUESTION 4: What is your conclusion from the \\(F\\)-test result?\nIt might be that the gene expression in two of the three groups may or may not be significantly different. To investigate that we do post hoc testing. This is nicely done within the framework of estimated marginal means using the emmeans package. Here emmeans makes the estimated marginal means (that is the predicted gene expression GeneD on the log scale), and the pairs() command provide post hoc pairwise comparisons (package automatically adjusts for multiple comparisons using the default tukey method):\n\n# Run emmeans\n\n\n# Perform post hoc pairwise comparisons\n\nQUESTION 5: What is your conclusion from the pairwise comparisons?\nWhen done with this exercise, please write 1-2 sentences about your final conclusion(s) on the association between GeneD expression and psoriasis here (One post per group): https://ucph.padlet.org/tugcekaraderi/x8ybz5n8ilzbqnm2"
   },
   {
     "objectID": "Exercises/exercises6.html",
@@ -1173,41 +1158,5 @@
     "title": "Presentation 4",
     "section": "",
     "text": "library(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\n\nggplot2 additive structure\n\nset.seed(123)\n\ndf = data.frame(sample = sample(x = c('A','B','C','D'), size = 100, replace = T), \n                measure = sample(x = 1:20, size = 100, replace = T))\n\nhead(df)\n\n  sample measure\n1      C      20\n2      C      14\n3      C       3\n4      B       8\n5      C      16\n6      B      12\n\n\n\nggplot(df, \n       aes(x = sample, \n           y = measure))\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_additive_structure_plot1.png')\n\nSaving 7 x 5 in image\n\n\n\nggplot(df, \n       aes(x = sample, \n           y = measure)) +\n  geom_boxplot()\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_additive_structure_plot2.png')\n\nSaving 7 x 5 in image\n\n\n\nggplot(df, \n       aes(x = sample, \n           y = measure,\n           fill = sample)) +\n  geom_boxplot()\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_additive_structure_plot3.png')\n\nSaving 7 x 5 in image\n\n\n\nggplot(df, \n       aes(x = sample, \n           y = measure,\n           fill = sample)) +\n  geom_boxplot() + \n  labs(x = 'Sample', \n       y = 'Measure (cm)', \n       title = 'Boxplots of measurements stratified by sample')\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_additive_structure_plot4.png')\n\nSaving 7 x 5 in image\n\n\n\nggplot(df, \n       aes(x = sample, \n           y = measure,\n           fill = sample)) +\n  geom_boxplot() + \n  labs(x = 'Sample', \n       y = 'Measure (cm)', \n       title = 'Boxplots of measurements stratified by sample') + \n  scale_fill_manual(values = c(\"pink\", \"lightgreen\", \"lavender\", \"lightblue\"))\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_additive_structure_plot5.png')\n\nSaving 7 x 5 in image\n\n\n\nggplot(df, \n       aes(x = sample, \n           y = measure,\n           fill = sample)) +\n  geom_boxplot() + \n  labs(x = 'Sample', \n       y = 'Measure (cm)', \n       title = 'Boxplots of measurements stratified by sample') + \n  scale_fill_manual(values = c(\"pink\", \"lightgreen\", \"lavender\", \"lightblue\")) + \n  theme_bw() \n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_additive_structure_plot6.png')\n\nSaving 7 x 5 in image\n\n\n\n\nggplot basic structure\n\nlibrary(ContaminatedMixt)\ndata('wine')\n\nset.seed(123)\ncountry &lt;- sample(x = c('France', 'Italy'), size = nrow(wine), replace = TRUE)\nwine$Country &lt;- country\n\nhead(wine)\n\n    Type Alcohol Malic  Ash Alcalinity Magnesium Phenols Flavanoids\n1 Barolo   14.23  1.71 2.43       15.6       127    2.80       3.06\n2 Barolo   13.20  1.78 2.14       11.2       100    2.65       2.76\n3 Barolo   13.16  2.36 2.67       18.6       101    2.80       3.24\n4 Barolo   14.37  1.95 2.50       16.8       113    3.85       3.49\n5 Barolo   13.24  2.59 2.87       21.0       118    2.80       2.69\n6 Barolo   14.20  1.76 2.45       15.2       112    3.27       3.39\n  Nonflavanoid Proanthocyanins Color  Hue Dilution Proline Country\n1         0.28            2.29  5.64 1.04     3.92    1065  France\n2         0.26            1.28  4.38 1.05     3.40    1050  France\n3         0.30            2.81  5.68 1.03     3.17    1185  France\n4         0.24            2.18  7.80 0.86     3.45    1480   Italy\n5         0.39            1.82  4.32 1.04     2.93     735  France\n6         0.34            1.97  6.75 1.05     2.85    1450   Italy\n\n\n\nggplot(wine,\n       aes(x = Type, \n           y = Alcohol,\n           fill = Country)) + \n  geom_col()\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_basic_structure_plot1.png')\n\nSaving 7 x 5 in image\n\n\n\nggplot(wine,\n       aes(x = Type, \n           y = Alcohol)) + \n  geom_col(fill = 'hotpink')\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_basic_structure_plot2.png')\n\nSaving 7 x 5 in image"
-  },
-  {
-    "objectID": "Presentations/presentation1.html#modes-of-quarto-document",
-    "href": "Presentations/presentation1.html#modes-of-quarto-document",
-    "title": "Presentation 1: R, Rstudio and Quarto",
-    "section": "Modes of Quarto Document",
-    "text": "Modes of Quarto Document\nThere are two modes of Quarto: Source and Visual. In the left part of the panel you can change between the two modes.\nSome features can only be added when you are in Source mode. E.g write blue text is coded like this in the source code [write blue text]{style=\"color:blue\"}.",
-    "crumbs": [
-      "Course Material",
-      "Presentations 👩🏽‍🏫",
-      "Presentation 1: Introduction"
-    ]
-  },
-  {
-    "objectID": "Presentations/presentation1.html#output-of-code-chunks",
-    "href": "Presentations/presentation1.html#output-of-code-chunks",
-    "title": "Presentation 1: R, Rstudio and Quarto",
-    "section": "Output of code chunks",
-    "text": "Output of code chunks\nControl whether code is executed. eval=FALSE not execute the code and eval=TRUE will execute the code.\nThe code is shown, but the result is not shown ({r, echo=TRUE, eval=FALSE}):\n\n1+3\n\nShow or hide code. echo=FALSE will hide the code and echo=TRUE will show the code. Default is TRUE.\nThe code is not shown, but the result is shown ({r, echo=FALSE, eval=TRUE}):\n\n\n[1] 4\n\n\nControl messages, warnings and errors. Maybe you have a code chunk that you know will produce one of the three and you often don’t want to see it in the compiled document. N.B! It is not a good idea to hide these statements (especially the errors) before you know what they are.\nWarning is not printed ({r, message=FALSE, warning=FALSE, error=TRUE}):\n\nlog(-1)\n\n[1] NaN\n\n\nWarning is printed ({r message=TRUE, warning=TRUE, error=TRUE}):\n\nlog(-1)\n\nWarning in log(-1): NaNs produced\n\n\n[1] NaN",
-    "crumbs": [
-      "Course Material",
-      "Presentations 👩🏽‍🏫",
-      "Presentation 1: Introduction"
-    ]
-  },
-  {
-    "objectID": "Presentations/presentation1.html#this-is-the-third-largest-header-header-3",
-    "href": "Presentations/presentation1.html#this-is-the-third-largest-header-header-3",
-    "title": "Presentation 1: R, Rstudio and Quarto",
-    "section": "",
-    "text": "This is normal text. Yes it is larger than the smallest header. A Quarto document works like a word document where we can write with bold or italic and insert thing like a table:\n\n\n\nMy friends\nTheir favorite drink\nTheir favorite food\n\n\n\n\nMicheal\nBeer\nBurger\n\n\nJane\nWine\nLasagne\n\n\nRobert\nWater\nSalad\n\n\n\n… a picture:\n\n\n\n\n\n\n\nThis is a cute cat\n\n\nWe can also make a list of things we like:\n\nCoffee\nCake\nWater\nFruit",
-    "crumbs": [
-      "Course Material",
-      "Presentations 👩🏽‍🏫",
-      "Presentation 1: Introduction"
-    ]
   }
 ]
