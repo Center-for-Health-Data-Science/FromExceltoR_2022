@@ -24,11 +24,7 @@ data('iris')
 head(iris)
 ```
 
-```{r}
-# some R code 
-```
-
-## Data wranglig
+## Data wrangling
 
 Making the data more fun to plot.
 
@@ -47,9 +43,13 @@ colors <- sample(colors, replace = TRUE)
 
 # Add the 'Flower.Color' column to the iris dataset
 iris$Flower.Color <- colors
+```
 
-# View the first few rows to check the result
+### Have a look at the dataset
+
+```{r}
 head(iris)
+colnames(iris)
 ```
 
 ## ggplot2: The basic concepts
@@ -59,7 +59,7 @@ This is the starting point of a ggplot. The dataframe and the columns we wish to
 ```{r}
 ggplot(iris,                    # dataframe 
        aes(x = Sepal.Length,    # x-value
-           y = Sepal.Width))    # y-value
+           y = Petal.Length))   # y-value
                                 # missing type of plot 
 ```
 
@@ -162,11 +162,16 @@ p <- ggplot(iris,
 p
 
 # Show p with new labels 
-p + labs(x = 'Flower Color', y = 'Count')
+p + labs(x = 'Awesome Flower Colors', y = 'Awesome Count')
+
+# Show p again
+p
 
 # Save p with new lables in p (overwrite / reassign)
-p2 <- p + labs(x = 'Flower Color', y = 'Count')
+p2 <- p + labs(x = 'Awesome Flower Colors', y = 'Awesome Count')
 
+# Show p2
+p2
 ```
 
 Color by species. The bars are stacked by default.
@@ -209,9 +214,9 @@ ggplot(iris,
   facet_wrap(vars(Species))
 ```
 
-## Extra section
+## Ordering columns 
 
-**(Should we exclude this? Is it too advanced? Is it used in the exercises?)** We can order the columns such that the count goes from lowest to highest. This is actually not that easy in R.
+We can order the columns such that the count goes from lowest to highest. This is actually not that easy in R.
 
 First, we see that the class of the Flower.Color is character. Characters are always sorted alphabetically like we saw above.
 
