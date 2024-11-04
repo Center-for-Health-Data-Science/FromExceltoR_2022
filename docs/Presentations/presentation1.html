@@ -297,10 +297,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#modes-of-quarto-document" id="toc-modes-of-quarto-document" class="nav-link" data-scroll-target="#modes-of-quarto-document">Modes of Quarto Document</a></li>
   <li><a href="#code-chunks-and-structure" id="toc-code-chunks-and-structure" class="nav-link" data-scroll-target="#code-chunks-and-structure">Code chunks and structure</a></li>
   <li><a href="#output-of-code-chunks" id="toc-output-of-code-chunks" class="nav-link" data-scroll-target="#output-of-code-chunks">Output of code chunks</a></li>
-  <li><a href="#shortcuts" id="toc-shortcuts" class="nav-link" data-scroll-target="#shortcuts">Shortcuts</a>
-  <ul class="collapse">
   <li><a href="#render-making-the-report" id="toc-render-making-the-report" class="nav-link" data-scroll-target="#render-making-the-report">Render: Making the report</a></li>
-  </ul></li>
   </ul></li>
   <li><a href="#lets-get-started-on-r" id="toc-lets-get-started-on-r" class="nav-link" data-scroll-target="#lets-get-started-on-r">Lets get started on R!</a>
   <ul class="collapse">
@@ -340,7 +337,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="the-quarto-way" class="level1">
 <h1>The Quarto Way!</h1>
 <p><a href="https://quarto.org/">Quarto</a> is an open-source publishing suite - a tool-suite that supports workflows for reproducible scholarly writing and publishing.</p>
-<p>Quarto documents begin with a <code>YAML header</code> which specifies things about the document, what type of documents to render (compile) to e.g.&nbsp;HTML, PDF, WORD, whether the document is published to a website project, document layout, and more.</p>
+<p>Quarto documents often begin with a <code>YAML header</code> demarcated by three dashes (<code>---</code>) which specifies things about the document. This includes what type of documents to render (compile) to e.g.&nbsp;HTML, PDF, WORD and whether it should be published to a website project. You can also add information on project title, author, default editor, etc.</p>
 </section>
 <section id="quarto-uses-a-markup-language" class="level1">
 <h1>Quarto uses a markup language</h1>
@@ -408,7 +405,9 @@ Some features can only be added when you are in Source mode. E.g <span style="co
 </section>
 <section id="code-chunks-and-structure" class="level2">
 <h2 class="anchored" data-anchor-id="code-chunks-and-structure">Code chunks and structure</h2>
-<p>Code chunks are where the code is added to the document. Click the green button <code>+c</code> and a grey code chunk will appear with <code>'{r}'</code> in the beginning. This mean that it is an R code chunk. It is also possible to insert code chunks of other coding language.<br>
+<p>Code chunks are where the code is added to the document.</p>
+<p>Click the green button <code>+c</code> and a grey code chunk will appear with <code>'{r}'</code> in the beginning. This means that it is an R code chunk. It is also possible to insert code chunks of other coding language.</p>
+<p><br>
 For executing the code, press the <code>Run</code> button in the top right of the chunk to evaluate the code.</p>
 <p>Below is a code chunk with a comment. A comment is a line that starts with a hashtag. Comments can be useful in longer code chunks and will often describe the code.</p>
 <div class="cell">
@@ -416,7 +415,7 @@ For executing the code, press the <code>Run</code> button in the top right of th
 </div>
 <p>Below I try to write text in a code chuck. If I try to execute I will get an error because R is trying to interpret it as code and does not understand.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Text without hashtag gets errors when executed</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Text without hashtag gets errors when executed</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>NB!</strong> Write executable code in the code chunks and execute it.</p>
 <div class="cell">
@@ -436,7 +435,8 @@ For executing the code, press the <code>Run</code> button in the top right of th
 </section>
 <section id="output-of-code-chunks" class="level2">
 <h2 class="anchored" data-anchor-id="output-of-code-chunks">Output of code chunks</h2>
-<p><strong>Control whether code is executed.</strong> eval=FALSE not execute the code and eval=TRUE will execute the code.</p>
+<p><strong>Control whether code is executed.</strong></p>
+<p><strong>eval=FALSE</strong> not execute the code and <strong>eval=TRUE</strong> will execute the code.</p>
 <p>The code is shown, but the result is not shown (<code>{r, echo=TRUE, eval=FALSE}</code>):</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">+</span><span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -467,15 +467,11 @@ For executing the code, press the <code>Run</code> button in the top right of th
 </div>
 </div>
 </section>
-<section id="shortcuts" class="level2">
-<h2 class="anchored" data-anchor-id="shortcuts">Shortcuts</h2>
-<p>If you want to look effortless while coding and impress you colleagues, have a look at the shortcuts. There are shortcuts for almost anything and you can find them (<em>Tools</em> –&gt; <em>Keyboard Shortcuts Help</em>) or change them to your own liking (<em>Tools</em> –&gt; <em>Modify Keyboard Shortcuts…</em>).</p>
-<section id="render-making-the-report" class="level3">
-<h3 class="anchored" data-anchor-id="render-making-the-report">Render: Making the report</h3>
+<section id="render-making-the-report" class="level2">
+<h2 class="anchored" data-anchor-id="render-making-the-report">Render: Making the report</h2>
 <p>In the panel there is a blue arrow and the word <em>Render</em>. Open the rendered html file in your browser and admire your work.</p>
 <p><span style="color:blue"><strong>Let’s get to coding!</strong></span></p>
 <hr>
-</section>
 </section>
 </section>
 <section id="lets-get-started-on-r" class="level1">
@@ -487,7 +483,7 @@ For executing the code, press the <code>Run</code> button in the top right of th
 <div class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "/Users/srz223/Desktop/DataLab/FromExceltoR/Teachers/Presentations"</code></pre>
+<pre><code>[1] "/Users/kgx936/Desktop/HeaDS/GitHub_repos/FromExceltoR/Teachers/Presentations"</code></pre>
 </div>
 </div>
 <p><strong>Set working directory, setwd()</strong></p>

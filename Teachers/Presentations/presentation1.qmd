@@ -10,7 +10,7 @@ project:
 
 [Quarto](https://quarto.org/) is an open-source publishing suite - a tool-suite that supports workflows for reproducible scholarly writing and publishing.
 
-Quarto documents begin with a `YAML header` which specifies things about the document, what type of documents to render (compile) to e.g. HTML, PDF, WORD, whether the document is published to a website project, document layout, and more.
+Quarto documents often begin with a `YAML header` demarcated by three dashes (`---`) which specifies things about the document. This includes what type of documents to render (compile) to e.g. HTML, PDF, WORD and whether it should be published to a website project. You can also add information on project title, author, default editor, etc.
 
 # Quarto uses a markup language
 
@@ -54,7 +54,11 @@ Some features can only be added when you are in Source mode. E.g [write blue tex
 
 ## Code chunks and structure
 
-Code chunks are where the code is added to the document. Click the green button `+c` and a grey code chunk will appear with `'{r}'` in the beginning. This mean that it is an R code chunk. It is also possible to insert code chunks of other coding language.\
+Code chunks are where the code is added to the document.
+
+Click the green button `+c` and a grey code chunk will appear with `'{r}'` in the beginning. This means that it is an R code chunk. It is also possible to insert code chunks of other coding language.
+
+\
 For executing the code, press the `Run` button in the top right of the chunk to evaluate the code.
 
 ```{r}
@@ -69,8 +73,8 @@ Below is a code chunk with a comment. A comment is a line that starts with a has
 
 Below I try to write text in a code chuck. If I try to execute I will get an error because R is trying to interpret it as code and does not understand.
 
-```{r}
-# Text without hashtag gets errors when executed
+```{r, eval=FALSE}
+Text without hashtag gets errors when executed
 ```
 
 **NB!** Write executable code in the code chunks and execute it.
@@ -88,7 +92,9 @@ You can add comments above or to the right of the code. This will not influence 
 
 ## Output of code chunks
 
-**Control whether code is executed.** eval=FALSE not execute the code and eval=TRUE will execute the code.
+**Control whether code is executed.**
+
+**eval=FALSE** not execute the code and **eval=TRUE** will execute the code.
 
 The code is shown, but the result is not shown (`{r, echo=TRUE, eval=FALSE}`):
 
@@ -119,11 +125,7 @@ Warning is printed (`{r message=TRUE, warning=TRUE, error=TRUE}`):
 log(-1)
 ```
 
-## Shortcuts
-
-If you want to look effortless while coding and impress you colleagues, have a look at the shortcuts. There are shortcuts for almost anything and you can find them (*Tools* –\> *Keyboard Shortcuts Help*) or change them to your own liking (*Tools* –\> *Modify Keyboard Shortcuts...*).
-
-### Render: Making the report
+## Render: Making the report
 
 In the panel there is a blue arrow and the word *Render*. Open the rendered html file in your browser and admire your work.
 
