@@ -150,7 +150,7 @@ ggplot(iris,
 
 ## Bar chart with `geom_bar`
 
-A bar chart is made with the `geom_bar` function and is used to get an overview over the distribution of a single categorical variable, e.g. Flower.Color in this instance. Here we see the number of flowers of each Flower.Color. Notice that the Flower.Colors are sorted alphabetically.
+A bar chart is made with the `geom_bar` function and is used to get an overview over the distribution of a single categorical variable, e.g. Flower.Color in this instance. The function treats the x-axis as categorical and **calculates the bar heights based on the number of occurrences** in each category. Here we see the number of flowers of each Flower.Color. Notice that the Flower.Colors are sorted alphabetically.
 
 ```{r}
 # Save plot in p
@@ -287,7 +287,9 @@ print(p)
 
 ## Bar chart with `geom_col`
 
-Summary of data:
+Another way to make a bar chart is by using `geom_col`. Unlike `geom_bar`, which only requires an x-value and automatically counts occurrences, `geom_col` requires both x- and y-values. This makes `geom_col` ideal for cases where you already have pre-calculated values that you want to use as the bar heights.
+
+The mean of the sepal length within each color is calcualted using the `summarize` function.
 
 ```{r}
 mean_sepal_length_pr_color <- iris %>%
@@ -296,8 +298,6 @@ mean_sepal_length_pr_color <- iris %>%
 
 head(mean_sepal_length_pr_color)
 ```
-
-A bar chart with `geom_bar` is used to get an overview over the distribution of a categorical variable relative to a continues variable. Here we see the average Sepal.Length of the flowers for each Flower.Color.
 
 ```{r}
 ggplot(mean_sepal_length_pr_color,   # dataframe 

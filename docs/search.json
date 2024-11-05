@@ -702,11 +702,11 @@
     ]
   },
   {
-    "objectID": "Presentations/presentation1.html#shortcuts",
-    "href": "Presentations/presentation1.html#shortcuts",
+    "objectID": "Presentations/presentation1.html#render-making-the-report",
+    "href": "Presentations/presentation1.html#render-making-the-report",
     "title": "Presentation 1: R, Rstudio and Quarto",
-    "section": "Shortcuts",
-    "text": "Shortcuts\nIf you want to look effortless while coding and impress you colleagues, have a look at the shortcuts. There are shortcuts for almost anything and you can find them (Tools –&gt; Keyboard Shortcuts Help) or change them to your own liking (Tools –&gt; Modify Keyboard Shortcuts…).\n\nRender: Making the report\nIn the panel there is a blue arrow and the word Render. Open the rendered html file in your browser and admire your work.\nLet’s get to coding!",
+    "section": "Render: Making the report",
+    "text": "Render: Making the report\nIn the panel there is a blue arrow and the word Render. Open the rendered html file in your browser and admire your work.\nLet’s get to coding!",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",
@@ -718,7 +718,7 @@
     "href": "Presentations/presentation1.html#working-directory",
     "title": "Presentation 1: R, Rstudio and Quarto",
     "section": "Working directory",
-    "text": "Working directory\nThe term path refers to the trajectory you need to follow from the place you are ‘located’ on your computer to the place you want to work from. When working with Quarto your working directory (wd) is always the same locations as your Quarto document (is not true for .R scripts!). The wd becomes important when we start loading data in from other places (presentation 2).\nWhere am I now? getwd()\n\ngetwd()\n\n[1] \"/Users/kgx936/Desktop/HeaDS/GitHub_repos/FromExceltoR/Teachers/Presentations\"\n\n\nSet working directory, setwd()\nThe working directory can changed BUT when working with Quarto this only influences individual code chunks. In opposition, a changing of wd within an .R script affects the document globally - we will not cover .R scripts in this course.\nThere are two type of paths, absolute paths (from root to desired location) and relative paths (from current location to desired location):\nAbsolute path:\n\nsetwd(\"/Users/kgx936/Desktop/HeaDS/GitHub_repos/FromExceltoR\")\n\nRelative path:\n\nsetwd('./Exercises/')\n\nNavigate up in the directory tree (..)\n\nsetwd('../Teachers')\n\nPointing to a dataset\n\nload('/Users/kgx936/Desktop/HeaDS/GitHub_repos/FromExceltoR/Data/MyData.Rdata')",
+    "text": "Working directory\nThe term path refers to the trajectory you need to follow from the place you are ‘located’ on your computer to the place you want to work from. When working with Quarto your working directory (wd) is always the same locations as your Quarto document (is not true for .R scripts!). The wd becomes important when we start loading data in from other places (presentation 2).\nWhere am I now? getwd()\n\ngetwd()\n\n[1] \"/Users/srz223/Desktop/DataLab/FromExceltoR/Teachers/Presentations\"\n\n\nSet working directory, setwd()\nThe working directory can changed BUT when working with Quarto this only influences individual code chunks. In opposition, a changing of wd within an .R script affects the document globally - we will not cover .R scripts in this course.\nThere are two type of paths, absolute paths (from root to desired location) and relative paths (from current location to desired location):\nAbsolute path:\n\nsetwd(\"/Users/kgx936/Desktop/HeaDS/GitHub_repos/FromExceltoR\")\n\nRelative path:\n\nsetwd('./Exercises/')\n\nNavigate up in the directory tree (..)\n\nsetwd('../Teachers')\n\nPointing to a dataset\n\nload('/Users/kgx936/Desktop/HeaDS/GitHub_repos/FromExceltoR/Data/MyData.Rdata')",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",
@@ -798,6 +798,27 @@
     ]
   },
   {
+    "objectID": "Presentations/video_test.html",
+    "href": "Presentations/video_test.html",
+    "title": "Video test",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Presentations/video_test.html#my-first-quarto-document",
+    "href": "Presentations/video_test.html#my-first-quarto-document",
+    "title": "Video test",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Presentations/video_test.html#adding-numbers-together",
+    "href": "Presentations/video_test.html#adding-numbers-together",
+    "title": "Video test",
+    "section": "Adding numbers together",
+    "text": "Adding numbers together\nDefine variables\n\na = 1\nb = 3\n\nLook at the variables\n\nprint(a)\n\n[1] 1\n\nprint(b)\n\n[1] 3\n\n\nMaking a new variable, c, which is the sum of a and b\n\n# This line will not be excecuted because of the hashtag\nc = a + b \n\nLook at the newly defined variable, c\n\nprint(c)\n\n[1] 4"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "FromExceltoR",
@@ -826,25 +847,95 @@
     "text": "Code memes"
   },
   {
-    "objectID": "Presentations/video_test.html",
-    "href": "Presentations/video_test.html",
-    "title": "Video test",
+    "objectID": "Presentations/presentation3_livecoding.html",
+    "href": "Presentations/presentation3_livecoding.html",
+    "title": "Presentation 3: ggplot2",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "text": "library(readxl)\nlibrary(writexl)\nlibrary(tidyverse)"
   },
   {
-    "objectID": "Presentations/video_test.html#my-first-quarto-document",
-    "href": "Presentations/video_test.html#my-first-quarto-document",
-    "title": "Video test",
+    "objectID": "Presentations/presentation3_livecoding.html#importing-libraries-and-data",
+    "href": "Presentations/presentation3_livecoding.html#importing-libraries-and-data",
+    "title": "Presentation 3: ggplot2",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "text": "library(readxl)\nlibrary(writexl)\nlibrary(tidyverse)"
   },
   {
-    "objectID": "Presentations/video_test.html#adding-numbers-together",
-    "href": "Presentations/video_test.html#adding-numbers-together",
-    "title": "Video test",
-    "section": "Adding numbers together",
-    "text": "Adding numbers together\nDefine variables\n\na = 1\nb = 3\n\nLook at the variables\n\nprint(a)\n\n[1] 1\n\nprint(b)\n\n[1] 3\n\n\nMaking a new variable, c, which is the sum of a and b\n\n# This line will not be excecuted because of the hashtag\nc = a + b \n\nLook at the newly defined variable, c\n\nprint(c)\n\n[1] 4"
+    "objectID": "Presentations/presentation3_livecoding.html#load-data",
+    "href": "Presentations/presentation3_livecoding.html#load-data",
+    "title": "Presentation 3: ggplot2",
+    "section": "Load data",
+    "text": "Load data\nThe iris dataset is a widely-used dataset in data science, containing 150 observations of iris flowers with features like sepal length, sepal width, petal length, and petal width. It includes three species: Setosa, Versicolor, and Virginica, making it ideal for classification tasks and data visualization.\n\ndata('iris')\nhead(iris)\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species\n1          5.1         3.5          1.4         0.2  setosa\n2          4.9         3.0          1.4         0.2  setosa\n3          4.7         3.2          1.3         0.2  setosa\n4          4.6         3.1          1.5         0.2  setosa\n5          5.0         3.6          1.4         0.2  setosa\n6          5.4         3.9          1.7         0.4  setosa"
+  },
+  {
+    "objectID": "Presentations/presentation3_livecoding.html#data-wrangling",
+    "href": "Presentations/presentation3_livecoding.html#data-wrangling",
+    "title": "Presentation 3: ggplot2",
+    "section": "Data wrangling",
+    "text": "Data wrangling\nMaking the data more fun to plot.\n\n# Define 5 colors and their respective ratios\ncolors &lt;- c(rep(\"Red\", 40), \n            rep(\"Blue\", 20), \n            rep(\"Yellow\",30), \n            rep(\"Green\", 20),\n            rep(\"Purple\",40))\n\nset.seed(123)  # For reproducibility\n\n# Shuffle the colors to mix them randomly\ncolors &lt;- sample(colors, replace = TRUE)\n\n# Add the 'Flower.Color' column to the iris dataset\niris$Flower.Color &lt;- colors\n\n\nHave a look at the dataset\n\nhead(iris)\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species Flower.Color\n1          5.1         3.5          1.4         0.2  setosa          Red\n2          4.9         3.0          1.4         0.2  setosa         Blue\n3          4.7         3.2          1.3         0.2  setosa       Purple\n4          4.6         3.1          1.5         0.2  setosa         Blue\n5          5.0         3.6          1.4         0.2  setosa          Red\n6          5.4         3.9          1.7         0.4  setosa       Purple\n\ncolnames(iris)\n\n[1] \"Sepal.Length\" \"Sepal.Width\"  \"Petal.Length\" \"Petal.Width\"  \"Species\"     \n[6] \"Flower.Color\""
+  },
+  {
+    "objectID": "Presentations/presentation3_livecoding.html#ggplot2-the-basic-concepts",
+    "href": "Presentations/presentation3_livecoding.html#ggplot2-the-basic-concepts",
+    "title": "Presentation 3: ggplot2",
+    "section": "ggplot2: The basic concepts",
+    "text": "ggplot2: The basic concepts\nThis is the starting point of a ggplot. The dataframe and the columns we wish to plot are defined. We have not specified what type of plot we want, hence an empty plot is produced.\n\nggplot(iris,                    # dataframe \n       aes(x = Sepal.Length,    # x-value\n           y = Petal.Length))   # y-value\n\n\n\n\n\n\n\n                                # missing type of plot"
+  },
+  {
+    "objectID": "Presentations/presentation3_livecoding.html#scatter-plot-with-geom_point",
+    "href": "Presentations/presentation3_livecoding.html#scatter-plot-with-geom_point",
+    "title": "Presentation 3: ggplot2",
+    "section": "Scatter plot with geom_point",
+    "text": "Scatter plot with geom_point\nA scatter plot is made with the geom_point function and is used to get an overview over the relationship between two numeric variables. Here we see the relationship between sepal length and width.\n\nggplot(iris,                   \n       aes(x = Sepal.Length,    \n           y = Petal.Length)) \n\n\n\n\n\n\n\n# scatter plot\n# color all points\n# color by Species\n\nChange color of entire plot by setting it outside aes()."
+  },
+  {
+    "objectID": "Presentations/presentation3_livecoding.html#scatter-plot-with-geom_point-with-color-stratification",
+    "href": "Presentations/presentation3_livecoding.html#scatter-plot-with-geom_point-with-color-stratification",
+    "title": "Presentation 3: ggplot2",
+    "section": "Scatter plot with geom_point with color stratification",
+    "text": "Scatter plot with geom_point with color stratification\nTo change colors based on a feature, you need to set it inside aes(). Here we see the relationship between sepal length and width colored by species.\n\nggplot(iris,                   \n       aes(x = Sepal.Length,   \n           y = Petal.Length,\n           color = Species)) +  \n  geom_point()"
+  },
+  {
+    "objectID": "Presentations/presentation3_livecoding.html#boxplot-with-geom_histogram",
+    "href": "Presentations/presentation3_livecoding.html#boxplot-with-geom_histogram",
+    "title": "Presentation 3: ggplot2",
+    "section": "Boxplot with geom_histogram",
+    "text": "Boxplot with geom_histogram\nBoxplots are great to get an overview of continues variables and spot outliers. Can be shown on either axis (x and y).\n\nggplot(iris,                    \n       aes(y = Sepal.Length)) + \n  geom_boxplot() \n\n\n\n\n\n\n\n# boxplot\n# split up by Species (x)\n# color/fill by Species"
+  },
+  {
+    "objectID": "Presentations/presentation3_livecoding.html#violin-plot-with-geom_violin",
+    "href": "Presentations/presentation3_livecoding.html#violin-plot-with-geom_violin",
+    "title": "Presentation 3: ggplot2",
+    "section": "Violin plot with geom_violin",
+    "text": "Violin plot with geom_violin\nA violin plot shows the distribution of a continuous variable across different categories, combining the features of a box plot and a density plot. Also, the labels can be edited.\n\nggplot(iris,                    \n       aes(y = Sepal.Length,    \n           x = Species))\n\n\n\n\n\n\n\n# violin plot \n# add labs"
+  },
+  {
+    "objectID": "Presentations/presentation3_livecoding.html#histogram-with-geom_histogram",
+    "href": "Presentations/presentation3_livecoding.html#histogram-with-geom_histogram",
+    "title": "Presentation 3: ggplot2",
+    "section": "Histogram with geom_histogram",
+    "text": "Histogram with geom_histogram\nHistogram shows the distribution of a continuous variable. You will sometimes get a message that suggests to select another binwidth. Do what is says and you will often get nicer plot (something nothing changes).\n\nggplot(iris,                    \n       aes(x = Sepal.Length))  \n\n\n\n\n\n\n\n# histrogram   \n# binwidth = 0.5"
+  },
+  {
+    "objectID": "Presentations/presentation3_livecoding.html#bar-chart-with-geom_bar",
+    "href": "Presentations/presentation3_livecoding.html#bar-chart-with-geom_bar",
+    "title": "Presentation 3: ggplot2",
+    "section": "Bar chart with geom_bar",
+    "text": "Bar chart with geom_bar\nA bar chart is made with the geom_bar function and is used to get an overview over the distribution of a single categorical variable, e.g. Flower.Color in this instance. The function treats the x-axis as categorical and calculates the bar heights based on the number of occurrences in each category. Here we see the number of flowers of each Flower.Color. Notice that the Flower.Colors are sorted alphabetically.\n\n# Save plot in p\np &lt;- ggplot(iris,                    \n            aes(x = Flower.Color)) \n# barplot\n\n# Show p\n\n# Show p with new labels\n\n# Show p again\n\n# Save p with new lables in p (overwrite / reassign)\n\n# Show p\n\nColor by species. The bars are stacked by default.\n\n# copy plot from above\n# add fill Species \n# position 'dogde', 'stacked'\n\n# theme_bw()\n# theme_classic()  \n# theme_minimal()\n# theme_dark()\n\n# facet_wrap(vars(Species))"
+  },
+  {
+    "objectID": "Presentations/presentation3_livecoding.html#ordering-columns",
+    "href": "Presentations/presentation3_livecoding.html#ordering-columns",
+    "title": "Presentation 3: ggplot2",
+    "section": "Ordering columns",
+    "text": "Ordering columns\nWe can order the columns such that the count goes from lowest to highest. This is actually not that easy in R.\nFirst, we see that the class of the Flower.Color is character. Characters are always sorted alphabetically like we saw above.\n\nclass(iris$Flower.Color)\n\n[1] \"character\"\n\n\nExtract the number of flowers for each Flower.Color.\n\ndl_Flower.Color &lt;- iris %&gt;%\n  group_by(Flower.Color) %&gt;%\n  summarise(n = n()) %&gt;% \n  arrange(desc(n))\n\ndl_Flower.Color\n\n# A tibble: 5 × 2\n  Flower.Color     n\n  &lt;chr&gt;        &lt;int&gt;\n1 Red             44\n2 Yellow          33\n3 Purple          30\n4 Green           22\n5 Blue            21\n\ndl_Flower.Color$Flower.Color\n\n[1] \"Red\"    \"Yellow\" \"Purple\" \"Green\"  \"Blue\"  \n\n\nChange the class of the Flower.Color feature to factor and add levels according to the number of flowers with each color.\n\niris$Flower.Color &lt;- factor(iris$Flower.Color,\n                            levels = dl_Flower.Color$Flower.Color)\n\nCheck class now\n\nclass(iris$Flower.Color)\n\n[1] \"factor\"\n\n\nNow we do the same plot as before and we see that the order has changed to range from largest to smallest Flower.Colors group. The plot is saved in the variable p.\n\np &lt;- ggplot(iris,                # dataframe \n       aes(x = Flower.Color)) +  # x-value\n  geom_bar()                     # type of plot \n\np\n\n\n\n\n\n\n\n\nWe can also flip the chart. We update the plot, p, be reassignment.\n\np &lt;- p + coord_flip()\n\nSince we are working with colors, we can change the colors of the bars to match the groups.\nR color chart here\n\n# Define color palette\ncolor_palette &lt;- c(\"Red\" = \"red3\", \n                   \"Blue\" = \"cornflowerblue\", \n                   \"Yellow\" = \"lightgoldenrod1\", \n                   \"Green\" = \"darkolivegreen2\", \n                   \"Purple\" = \"darkorchid3\")\n\np &lt;- p + \n  aes(fill = Flower.Color) +                # add the fill ascetics \n  scale_fill_manual(values = color_palette) # set the fill color according to the color palette\n\nprint(p)"
+  },
+  {
+    "objectID": "Presentations/presentation3_livecoding.html#bar-chart-with-geom_col",
+    "href": "Presentations/presentation3_livecoding.html#bar-chart-with-geom_col",
+    "title": "Presentation 3: ggplot2",
+    "section": "Bar chart with geom_col",
+    "text": "Bar chart with geom_col\nAnother way to make a bar chart is by using geom_col. Unlike geom_bar, which only requires an x-value and automatically counts occurrences, geom_col requires both x- and y-values. This makes geom_col ideal for cases where you already have pre-calculated values that you want to use as the bar heights.\nThe mean of the sepal length within each color is calcualted using the summarize function.\n\nmean_sepal_length_pr_color &lt;- iris %&gt;%\n  group_by(Flower.Color) %&gt;%\n  summarize(mean_Sepal.Length = mean(Sepal.Length))\n\nhead(mean_sepal_length_pr_color)\n\n# A tibble: 5 × 2\n  Flower.Color mean_Sepal.Length\n  &lt;fct&gt;                    &lt;dbl&gt;\n1 Red                       5.88\n2 Yellow                    5.89\n3 Purple                    5.91\n4 Green                     5.65\n5 Blue                      5.79\n\n\n\nggplot(mean_sepal_length_pr_color,   \n       aes(x = Flower.Color,        \n           y = mean_Sepal.Length)) +\n  geom_col()"
   },
   {
     "objectID": "Presentations/presentation3.html",
@@ -875,7 +966,7 @@
     "href": "Presentations/presentation3.html#load-data",
     "title": "Presentation 3: ggplot2",
     "section": "Load data",
-    "text": "Load data\nThe iris dataset is a widely-used dataset in data science, containing 150 observations of iris flowers with features like sepal length, sepal width, petal length, and petal width. It includes three species: Setosa, Versicolor, and Virginica, making it ideal for classification tasks and data visualization.\n\ndata('iris')\nhead(iris)\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species\n1          5.1         3.5          1.4         0.2  setosa\n2          4.9         3.0          1.4         0.2  setosa\n3          4.7         3.2          1.3         0.2  setosa\n4          4.6         3.1          1.5         0.2  setosa\n5          5.0         3.6          1.4         0.2  setosa\n6          5.4         3.9          1.7         0.4  setosa\n\n\n\n# some R code",
+    "text": "Load data\nThe iris dataset is a widely-used dataset in data science, containing 150 observations of iris flowers with features like sepal length, sepal width, petal length, and petal width. It includes three species: Setosa, Versicolor, and Virginica, making it ideal for classification tasks and data visualization.\n\ndata('iris')\nhead(iris)\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species\n1          5.1         3.5          1.4         0.2  setosa\n2          4.9         3.0          1.4         0.2  setosa\n3          4.7         3.2          1.3         0.2  setosa\n4          4.6         3.1          1.5         0.2  setosa\n5          5.0         3.6          1.4         0.2  setosa\n6          5.4         3.9          1.7         0.4  setosa",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",
@@ -883,11 +974,11 @@
     ]
   },
   {
-    "objectID": "Presentations/presentation3.html#data-wranglig",
-    "href": "Presentations/presentation3.html#data-wranglig",
+    "objectID": "Presentations/presentation3.html#data-wrangling",
+    "href": "Presentations/presentation3.html#data-wrangling",
     "title": "Presentation 3: ggplot2",
-    "section": "Data wranglig",
-    "text": "Data wranglig\nMaking the data more fun to plot.\n\n# Define 5 colors and their respective ratios\ncolors &lt;- c(rep(\"Red\", 40), \n            rep(\"Blue\", 20), \n            rep(\"Yellow\",30), \n            rep(\"Green\", 20),\n            rep(\"Purple\",40))\n\nset.seed(123)  # For reproducibility\n\n# Shuffle the colors to mix them randomly\ncolors &lt;- sample(colors, replace = TRUE)\n\n# Add the 'Flower.Color' column to the iris dataset\niris$Flower.Color &lt;- colors\n\n# View the first few rows to check the result\nhead(iris)\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species Flower.Color\n1          5.1         3.5          1.4         0.2  setosa          Red\n2          4.9         3.0          1.4         0.2  setosa         Blue\n3          4.7         3.2          1.3         0.2  setosa       Purple\n4          4.6         3.1          1.5         0.2  setosa         Blue\n5          5.0         3.6          1.4         0.2  setosa          Red\n6          5.4         3.9          1.7         0.4  setosa       Purple",
+    "section": "Data wrangling",
+    "text": "Data wrangling\nMaking the data more fun to plot.\n\n# Define 5 colors and their respective ratios\ncolors &lt;- c(rep(\"Red\", 40), \n            rep(\"Blue\", 20), \n            rep(\"Yellow\",30), \n            rep(\"Green\", 20),\n            rep(\"Purple\",40))\n\nset.seed(123)  # For reproducibility\n\n# Shuffle the colors to mix them randomly\ncolors &lt;- sample(colors, replace = TRUE)\n\n# Add the 'Flower.Color' column to the iris dataset\niris$Flower.Color &lt;- colors\n\n\nHave a look at the dataset\n\nhead(iris)\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species Flower.Color\n1          5.1         3.5          1.4         0.2  setosa          Red\n2          4.9         3.0          1.4         0.2  setosa         Blue\n3          4.7         3.2          1.3         0.2  setosa       Purple\n4          4.6         3.1          1.5         0.2  setosa         Blue\n5          5.0         3.6          1.4         0.2  setosa          Red\n6          5.4         3.9          1.7         0.4  setosa       Purple\n\ncolnames(iris)\n\n[1] \"Sepal.Length\" \"Sepal.Width\"  \"Petal.Length\" \"Petal.Width\"  \"Species\"     \n[6] \"Flower.Color\"",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",
@@ -899,7 +990,7 @@
     "href": "Presentations/presentation3.html#ggplot2-the-basic-concepts",
     "title": "Presentation 3: ggplot2",
     "section": "ggplot2: The basic concepts",
-    "text": "ggplot2: The basic concepts\nThis is the starting point of a ggplot. The dataframe and the columns we wish to plot are defined. We have not specified what type of plot we want, hence an empty plot is produced.\n\nggplot(iris,                    # dataframe \n       aes(x = Sepal.Length,    # x-value\n           y = Sepal.Width))    # y-value\n\n\n\n\n\n\n\n                                # missing type of plot",
+    "text": "ggplot2: The basic concepts\nThis is the starting point of a ggplot. The dataframe and the columns we wish to plot are defined. We have not specified what type of plot we want, hence an empty plot is produced.\n\nggplot(iris,                    # dataframe \n       aes(x = Sepal.Length,    # x-value\n           y = Petal.Length))   # y-value\n\n\n\n\n\n\n\n                                # missing type of plot",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",
@@ -971,7 +1062,7 @@
     "href": "Presentations/presentation3.html#bar-chart-with-geom_bar",
     "title": "Presentation 3: ggplot2",
     "section": "Bar chart with geom_bar",
-    "text": "Bar chart with geom_bar\nA bar chart is made with the geom_bar function and is used to get an overview over the distribution of a single categorical variable, e.g. Flower.Color in this instance. Here we see the number of flowers of each Flower.Color. Notice that the Flower.Colors are sorted alphabetically.\n\n# Save plot in p\np &lt;- ggplot(iris,                    \n            aes(x = Flower.Color)) + \n  geom_bar()                         \n\n# Show p\np\n\n\n\n\n\n\n\n# Show p with new labels \np + labs(x = 'Flower Color', y = 'Count')\n\n\n\n\n\n\n\n# Save p with new lables in p (overwrite / reassign)\np2 &lt;- p + labs(x = 'Flower Color', y = 'Count')\n\nColor by species. The bars are stacked by default.\n\nggplot(iris,                    \n       aes(x = Flower.Color,   \n           fill = Species)) +   \n  geom_bar()                   \n\n\n\n\n\n\n\n\nAdd position = \"dodge\" for bars to be placed next to each other.\n\nggplot(iris,                   \n      aes(x = Flower.Color,    \n          fill = Species)) +   \n  geom_bar(position = \"dodge\") \n\n\n\n\n\n\n\n\nAdd position = \"fill\" for bars to be normalized such that heights of the bars to represent percentages rather than counts.\n\nggplot(iris,                   \n      aes(x = Flower.Color,   \n          fill = Species)) +   \n  geom_bar(position = \"fill\") + \n  theme_bw()\n\n\n\n\n\n\n\n  # theme_classic()  \n  # theme_minimal()\n  # theme_dark()\n\nUsing facet_wrap if you want a plot to be split up according to a categorical variable.\n\nggplot(iris,                   \n      aes(x = Flower.Color)) +\n  geom_bar()  + \n  facet_wrap(vars(Species))",
+    "text": "Bar chart with geom_bar\nA bar chart is made with the geom_bar function and is used to get an overview over the distribution of a single categorical variable, e.g. Flower.Color in this instance. The function treats the x-axis as categorical and calculates the bar heights based on the number of occurrences in each category. Here we see the number of flowers of each Flower.Color. Notice that the Flower.Colors are sorted alphabetically.\n\n# Save plot in p\np &lt;- ggplot(iris,                    \n            aes(x = Flower.Color)) + \n  geom_bar()                         \n\n# Show p\np\n\n\n\n\n\n\n\n# Show p with new labels \np + labs(x = 'Awesome Flower Colors', y = 'Awesome Count')\n\n\n\n\n\n\n\n# Show p again\np\n\n\n\n\n\n\n\n# Save p with new lables in p (overwrite / reassign)\np2 &lt;- p + labs(x = 'Awesome Flower Colors', y = 'Awesome Count')\n\n# Show p2\np2\n\n\n\n\n\n\n\n\nColor by species. The bars are stacked by default.\n\nggplot(iris,                    \n       aes(x = Flower.Color,   \n           fill = Species)) +   \n  geom_bar()                   \n\n\n\n\n\n\n\n\nAdd position = \"dodge\" for bars to be placed next to each other.\n\nggplot(iris,                   \n      aes(x = Flower.Color,    \n          fill = Species)) +   \n  geom_bar(position = \"dodge\") \n\n\n\n\n\n\n\n\nAdd position = \"fill\" for bars to be normalized such that heights of the bars to represent percentages rather than counts.\n\nggplot(iris,                   \n      aes(x = Flower.Color,   \n          fill = Species)) +   \n  geom_bar(position = \"fill\") + \n  theme_bw()\n\n\n\n\n\n\n\n  # theme_classic()  \n  # theme_minimal()\n  # theme_dark()\n\nUsing facet_wrap if you want a plot to be split up according to a categorical variable.\n\nggplot(iris,                   \n      aes(x = Flower.Color)) +\n  geom_bar()  + \n  facet_wrap(vars(Species))",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",
@@ -979,11 +1070,11 @@
     ]
   },
   {
-    "objectID": "Presentations/presentation3.html#extra-section",
-    "href": "Presentations/presentation3.html#extra-section",
+    "objectID": "Presentations/presentation3.html#ordering-columns",
+    "href": "Presentations/presentation3.html#ordering-columns",
     "title": "Presentation 3: ggplot2",
-    "section": "Extra section",
-    "text": "Extra section\n(Should we exclude this? Is it too advanced? Is it used in the exercises?) We can order the columns such that the count goes from lowest to highest. This is actually not that easy in R.\nFirst, we see that the class of the Flower.Color is character. Characters are always sorted alphabetically like we saw above.\n\nclass(iris$Flower.Color)\n\n[1] \"character\"\n\n\nExtract the number of flowers for each Flower.Color.\n\ndl_Flower.Color &lt;- iris %&gt;%\n  group_by(Flower.Color) %&gt;%\n  summarise(n = n()) %&gt;% \n  arrange(desc(n))\n\ndl_Flower.Color\n\n# A tibble: 5 × 2\n  Flower.Color     n\n  &lt;chr&gt;        &lt;int&gt;\n1 Red             44\n2 Yellow          33\n3 Purple          30\n4 Green           22\n5 Blue            21\n\ndl_Flower.Color$Flower.Color\n\n[1] \"Red\"    \"Yellow\" \"Purple\" \"Green\"  \"Blue\"  \n\n\nChange the class of the Flower.Color feature to factor and add levels according to the number of flowers with each color.\n\niris$Flower.Color &lt;- factor(iris$Flower.Color,\n                            levels = dl_Flower.Color$Flower.Color)\n\nCheck class now\n\nclass(iris$Flower.Color)\n\n[1] \"factor\"\n\n\nNow we do the same plot as before and we see that the order has changed to range from largest to smallest Flower.Colors group. The plot is saved in the variable p.\n\np &lt;- ggplot(iris,                # dataframe \n       aes(x = Flower.Color)) +  # x-value\n  geom_bar()                     # type of plot \n\np\n\n\n\n\n\n\n\n\nWe can also flip the chart. We update the plot, p, be reassignment.\n\np &lt;- p + coord_flip()\n\nSince we are working with colors, we can change the colors of the bars to match the groups.\nR color chart here\n\n# Define color palette\ncolor_palette &lt;- c(\"Red\" = \"red3\", \n                   \"Blue\" = \"cornflowerblue\", \n                   \"Yellow\" = \"lightgoldenrod1\", \n                   \"Green\" = \"darkolivegreen2\", \n                   \"Purple\" = \"darkorchid3\")\n\np &lt;- p + \n  aes(fill = Flower.Color) +                # add the fill ascetics \n  scale_fill_manual(values = color_palette) # set the fill color according to the color palette\n\nprint(p)",
+    "section": "Ordering columns",
+    "text": "Ordering columns\nWe can order the columns such that the count goes from lowest to highest. This is actually not that easy in R.\nFirst, we see that the class of the Flower.Color is character. Characters are always sorted alphabetically like we saw above.\n\nclass(iris$Flower.Color)\n\n[1] \"character\"\n\n\nExtract the number of flowers for each Flower.Color.\n\ndl_Flower.Color &lt;- iris %&gt;%\n  group_by(Flower.Color) %&gt;%\n  summarise(n = n()) %&gt;% \n  arrange(desc(n))\n\ndl_Flower.Color\n\n# A tibble: 5 × 2\n  Flower.Color     n\n  &lt;chr&gt;        &lt;int&gt;\n1 Red             44\n2 Yellow          33\n3 Purple          30\n4 Green           22\n5 Blue            21\n\ndl_Flower.Color$Flower.Color\n\n[1] \"Red\"    \"Yellow\" \"Purple\" \"Green\"  \"Blue\"  \n\n\nChange the class of the Flower.Color feature to factor and add levels according to the number of flowers with each color.\n\niris$Flower.Color &lt;- factor(iris$Flower.Color,\n                            levels = dl_Flower.Color$Flower.Color)\n\nCheck class now\n\nclass(iris$Flower.Color)\n\n[1] \"factor\"\n\n\nNow we do the same plot as before and we see that the order has changed to range from largest to smallest Flower.Colors group. The plot is saved in the variable p.\n\np &lt;- ggplot(iris,                # dataframe \n       aes(x = Flower.Color)) +  # x-value\n  geom_bar()                     # type of plot \n\np\n\n\n\n\n\n\n\n\nWe can also flip the chart. We update the plot, p, be reassignment.\n\np &lt;- p + coord_flip()\n\nSince we are working with colors, we can change the colors of the bars to match the groups.\nR color chart here\n\n# Define color palette\ncolor_palette &lt;- c(\"Red\" = \"red3\", \n                   \"Blue\" = \"cornflowerblue\", \n                   \"Yellow\" = \"lightgoldenrod1\", \n                   \"Green\" = \"darkolivegreen2\", \n                   \"Purple\" = \"darkorchid3\")\n\np &lt;- p + \n  aes(fill = Flower.Color) +                # add the fill ascetics \n  scale_fill_manual(values = color_palette) # set the fill color according to the color palette\n\nprint(p)",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",
@@ -995,7 +1086,7 @@
     "href": "Presentations/presentation3.html#bar-chart-with-geom_col",
     "title": "Presentation 3: ggplot2",
     "section": "Bar chart with geom_col",
-    "text": "Bar chart with geom_col\nSummary of data:\n\nmean_sepal_length_pr_color &lt;- iris %&gt;%\n  group_by(Flower.Color) %&gt;%\n  summarize(mean_Sepal.Length = mean(Sepal.Length))\n\nhead(mean_sepal_length_pr_color)\n\n# A tibble: 5 × 2\n  Flower.Color mean_Sepal.Length\n  &lt;fct&gt;                    &lt;dbl&gt;\n1 Red                       5.88\n2 Yellow                    5.89\n3 Purple                    5.91\n4 Green                     5.65\n5 Blue                      5.79\n\n\nA bar chart with geom_bar is used to get an overview over the distribution of a categorical variable relative to a continues variable. Here we see the average Sepal.Length of the flowers for each Flower.Color.\n\nggplot(mean_sepal_length_pr_color,   # dataframe \n       aes(x = Flower.Color,         # x-value\n           y = mean_Sepal.Length)) + # y-value\n  geom_col()                         # type of plot",
+    "text": "Bar chart with geom_col\nAnother way to make a bar chart is by using geom_col. Unlike geom_bar, which only requires an x-value and automatically counts occurrences, geom_col requires both x- and y-values. This makes geom_col ideal for cases where you already have pre-calculated values that you want to use as the bar heights.\nThe mean of the sepal length within each color is calcualted using the summarize function.\n\nmean_sepal_length_pr_color &lt;- iris %&gt;%\n  group_by(Flower.Color) %&gt;%\n  summarize(mean_Sepal.Length = mean(Sepal.Length))\n\nhead(mean_sepal_length_pr_color)\n\n# A tibble: 5 × 2\n  Flower.Color mean_Sepal.Length\n  &lt;fct&gt;                    &lt;dbl&gt;\n1 Red                       5.88\n2 Yellow                    5.89\n3 Purple                    5.91\n4 Green                     5.65\n5 Blue                      5.79\n\n\n\nggplot(mean_sepal_length_pr_color,   # dataframe \n       aes(x = Flower.Color,         # x-value\n           y = mean_Sepal.Length)) + # y-value\n  geom_col()                         # type of plot",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",
@@ -1157,18 +1248,6 @@
     "href": "Slideshow/material_for_slides.html",
     "title": "Presentation 4",
     "section": "",
-    "text": "library(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\n\nggplot2 additive structure\n\nset.seed(123)\n\ndf = data.frame(sample = sample(x = c('A','B','C','D'), size = 100, replace = T), \n                measure = sample(x = 1:20, size = 100, replace = T))\n\nhead(df)\n\n  sample measure\n1      C      20\n2      C      14\n3      C       3\n4      B       8\n5      C      16\n6      B      12\n\n\n\nggplot(df, \n       aes(x = sample, \n           y = measure))\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_additive_structure_plot1.png')\n\nSaving 7 x 5 in image\n\n\n\nggplot(df, \n       aes(x = sample, \n           y = measure)) +\n  geom_boxplot()\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_additive_structure_plot2.png')\n\nSaving 7 x 5 in image\n\n\n\nggplot(df, \n       aes(x = sample, \n           y = measure,\n           fill = sample)) +\n  geom_boxplot()\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_additive_structure_plot3.png')\n\nSaving 7 x 5 in image\n\n\n\nggplot(df, \n       aes(x = sample, \n           y = measure,\n           fill = sample)) +\n  geom_boxplot() + \n  labs(x = 'Sample', \n       y = 'Measure (cm)', \n       title = 'Boxplots of measurements stratified by sample')\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_additive_structure_plot4.png')\n\nSaving 7 x 5 in image\n\n\n\nggplot(df, \n       aes(x = sample, \n           y = measure,\n           fill = sample)) +\n  geom_boxplot() + \n  labs(x = 'Sample', \n       y = 'Measure (cm)', \n       title = 'Boxplots of measurements stratified by sample') + \n  scale_fill_manual(values = c(\"pink\", \"lightgreen\", \"lavender\", \"lightblue\"))\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_additive_structure_plot5.png')\n\nSaving 7 x 5 in image\n\n\n\nggplot(df, \n       aes(x = sample, \n           y = measure,\n           fill = sample)) +\n  geom_boxplot() + \n  labs(x = 'Sample', \n       y = 'Measure (cm)', \n       title = 'Boxplots of measurements stratified by sample') + \n  scale_fill_manual(values = c(\"pink\", \"lightgreen\", \"lavender\", \"lightblue\")) + \n  theme_bw() \n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_additive_structure_plot6.png')\n\nSaving 7 x 5 in image\n\n\n\n\nggplot basic structure\n\nlibrary(ContaminatedMixt)\ndata('wine')\n\nset.seed(123)\ncountry &lt;- sample(x = c('France', 'Italy'), size = nrow(wine), replace = TRUE)\nwine$Country &lt;- country\n\nhead(wine)\n\n    Type Alcohol Malic  Ash Alcalinity Magnesium Phenols Flavanoids\n1 Barolo   14.23  1.71 2.43       15.6       127    2.80       3.06\n2 Barolo   13.20  1.78 2.14       11.2       100    2.65       2.76\n3 Barolo   13.16  2.36 2.67       18.6       101    2.80       3.24\n4 Barolo   14.37  1.95 2.50       16.8       113    3.85       3.49\n5 Barolo   13.24  2.59 2.87       21.0       118    2.80       2.69\n6 Barolo   14.20  1.76 2.45       15.2       112    3.27       3.39\n  Nonflavanoid Proanthocyanins Color  Hue Dilution Proline Country\n1         0.28            2.29  5.64 1.04     3.92    1065  France\n2         0.26            1.28  4.38 1.05     3.40    1050  France\n3         0.30            2.81  5.68 1.03     3.17    1185  France\n4         0.24            2.18  7.80 0.86     3.45    1480   Italy\n5         0.39            1.82  4.32 1.04     2.93     735  France\n6         0.34            1.97  6.75 1.05     2.85    1450   Italy\n\n\n\nggplot(wine,\n       aes(x = Type, \n           y = Alcohol,\n           fill = Country)) + \n  geom_col()\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_basic_structure_plot1.png')\n\nSaving 7 x 5 in image\n\n\n\nggplot(wine,\n       aes(x = Type, \n           y = Alcohol)) + \n  geom_col(fill = 'hotpink')\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_basic_structure_plot2.png')\n\nSaving 7 x 5 in image"
-  },
-  {
-    "objectID": "Presentations/presentation1.html#render-making-the-report",
-    "href": "Presentations/presentation1.html#render-making-the-report",
-    "title": "Presentation 1: R, Rstudio and Quarto",
-    "section": "Render: Making the report",
-    "text": "Render: Making the report\nIn the panel there is a blue arrow and the word Render. Open the rendered html file in your browser and admire your work.\nLet’s get to coding!",
-    "crumbs": [
-      "Course Material",
-      "Presentations 👩🏽‍🏫",
-      "Presentation 1: Introduction"
-    ]
+    "text": "library(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\n\nggplot2 additive structure\n\nset.seed(123)\n\ndf = data.frame(Sample = sample(x = c('A','B','C','D'), size = 100, replace = T), \n                Measure = sample(x = 1:20, size = 100, replace = T))\n\nhead(df)\n\n  Sample Measure\n1      C      20\n2      C      14\n3      C       3\n4      B       8\n5      C      16\n6      B      12\n\n\n\nggplot(df, \n       aes(x = Sample, \n           y = Measure))\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_additive_structure_plot1.png')\n\nSaving 7 x 5 in image\n\n\n\nggplot(df, \n       aes(x = Sample, \n           y = Measure)) +\n  geom_boxplot()\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_additive_structure_plot2.png')\n\nSaving 7 x 5 in image\n\n\n\nggplot(df, \n       aes(x = Sample, \n           y = Measure,\n           fill = Sample)) +\n  geom_boxplot()\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_additive_structure_plot3.png')\n\nSaving 7 x 5 in image\n\n\n\nggplot(df, \n       aes(x = Sample, \n           y = Measure,\n           fill = Sample)) +\n  geom_boxplot() + \n  labs(title = 'Boxplots of measurements stratified by sample')\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_additive_structure_plot4.png')\n\nSaving 7 x 5 in image\n\n\n\nggplot(df, \n       aes(x = Sample, \n           y = Measure,\n           fill = Sample)) +\n  geom_boxplot() + \n  labs(title = 'Boxplots of measurements stratified by sample') + \n  scale_fill_manual(values = c(\"pink\", \"lightgreen\", \"lavender\", \"lightblue\"))\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_additive_structure_plot5.png')\n\nSaving 7 x 5 in image\n\n\n\nggplot(df, \n       aes(x = Sample, \n           y = Measure,\n           fill = Sample)) +\n  geom_boxplot() + \n  labs(title = 'Boxplots of measurements stratified by sample') + \n  scale_fill_manual(values = c(\"pink\", \"lightgreen\", \"lavender\", \"lightblue\")) + \n  theme_bw() \n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_additive_structure_plot6.png')\n\nSaving 7 x 5 in image\n\n\n\n\nggplot basic structure\n\nlibrary(ContaminatedMixt)\ndata('wine')\n\nset.seed(123)\ncountry &lt;- sample(x = c('France', 'Italy'), size = nrow(wine), replace = TRUE)\nwine$Country &lt;- country\n\nhead(wine)\n\n    Type Alcohol Malic  Ash Alcalinity Magnesium Phenols Flavanoids\n1 Barolo   14.23  1.71 2.43       15.6       127    2.80       3.06\n2 Barolo   13.20  1.78 2.14       11.2       100    2.65       2.76\n3 Barolo   13.16  2.36 2.67       18.6       101    2.80       3.24\n4 Barolo   14.37  1.95 2.50       16.8       113    3.85       3.49\n5 Barolo   13.24  2.59 2.87       21.0       118    2.80       2.69\n6 Barolo   14.20  1.76 2.45       15.2       112    3.27       3.39\n  Nonflavanoid Proanthocyanins Color  Hue Dilution Proline Country\n1         0.28            2.29  5.64 1.04     3.92    1065  France\n2         0.26            1.28  4.38 1.05     3.40    1050  France\n3         0.30            2.81  5.68 1.03     3.17    1185  France\n4         0.24            2.18  7.80 0.86     3.45    1480   Italy\n5         0.39            1.82  4.32 1.04     2.93     735  France\n6         0.34            1.97  6.75 1.05     2.85    1450   Italy\n\nwine %&gt;% select(Type, Alcohol, Country, Magnesium, Phenols) %&gt;% head()\n\n    Type Alcohol Country Magnesium Phenols\n1 Barolo   14.23  France       127    2.80\n2 Barolo   13.20  France       100    2.65\n3 Barolo   13.16  France       101    2.80\n4 Barolo   14.37   Italy       113    3.85\n5 Barolo   13.24  France       118    2.80\n6 Barolo   14.20   Italy       112    3.27\n\n\n\nggplot(wine,\n       aes(x = Type, \n           y = Alcohol,\n           fill = Country)) + \n  geom_col()\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_basic_structure_plot1.png')\n\nSaving 7 x 5 in image\n\n\n\nggplot(wine,\n       aes(x = Type, \n           y = Alcohol)) + \n  geom_col(fill = 'hotpink')\n\n\n\n\n\n\n\nggsave('material_for_slides/ggplot2_basic_structure_plot2.png')\n\nSaving 7 x 5 in image"
   }
 ]
