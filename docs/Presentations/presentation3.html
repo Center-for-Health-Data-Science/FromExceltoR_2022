@@ -222,6 +222,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../Exercises/exercises5_PART1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exercise 4, part 1: Statistics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Exercises/exercises5_PART2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exercise 4, part 2: Statistics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../Exercises/exercises6.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exercise 6: Data Exercise in R</span></a>
   </div>
@@ -239,13 +251,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Exercises/exercises2_SOLUTIONS.html" class="sidebar-item-text sidebar-link">
+  <a href="../Exercises/solution_not_up.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exercise 2 - Solution</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Exercises/exercises3_SOLUTIONS.html" class="sidebar-item-text sidebar-link">
+  <a href="../Exercises/solution_not_up.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exercise 3 - Solution</span></a>
   </div>
 </li>
@@ -299,7 +311,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#ggplot2-the-basic-concepts" id="toc-ggplot2-the-basic-concepts" class="nav-link" data-scroll-target="#ggplot2-the-basic-concepts">ggplot2: The basic concepts</a></li>
   <li><a href="#scatter-plot-with-geom_point" id="toc-scatter-plot-with-geom_point" class="nav-link" data-scroll-target="#scatter-plot-with-geom_point">Scatter plot with <code>geom_point</code></a></li>
   <li><a href="#scatter-plot-with-geom_point-with-color-stratification" id="toc-scatter-plot-with-geom_point-with-color-stratification" class="nav-link" data-scroll-target="#scatter-plot-with-geom_point-with-color-stratification">Scatter plot with <code>geom_point</code> with color stratification</a></li>
-  <li><a href="#boxplot-with-geom_histogram" id="toc-boxplot-with-geom_histogram" class="nav-link" data-scroll-target="#boxplot-with-geom_histogram">Boxplot with <code>geom_histogram</code></a></li>
+  <li><a href="#boxplot-with-geom_boxplot" id="toc-boxplot-with-geom_boxplot" class="nav-link" data-scroll-target="#boxplot-with-geom_boxplot">Boxplot with <code>geom_boxplot</code></a></li>
   <li><a href="#violin-plot-with-geom_violin" id="toc-violin-plot-with-geom_violin" class="nav-link" data-scroll-target="#violin-plot-with-geom_violin">Violin plot with <code>geom_violin</code></a></li>
   <li><a href="#histogram-with-geom_histogram" id="toc-histogram-with-geom_histogram" class="nav-link" data-scroll-target="#histogram-with-geom_histogram">Histogram with <code>geom_histogram</code></a></li>
   <li><a href="#bar-chart-with-geom_bar" id="toc-bar-chart-with-geom_bar" class="nav-link" data-scroll-target="#bar-chart-with-geom_bar">Bar chart with <code>geom_bar</code></a></li>
@@ -461,8 +473,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="boxplot-with-geom_histogram" class="level2">
-<h2 class="anchored" data-anchor-id="boxplot-with-geom_histogram">Boxplot with <code>geom_histogram</code></h2>
+<section id="boxplot-with-geom_boxplot" class="level2">
+<h2 class="anchored" data-anchor-id="boxplot-with-geom_boxplot">Boxplot with <code>geom_boxplot</code></h2>
 <p>Boxplots are great to get an overview of continues variables and spot outliers. Can be shown on either axis (x and y).</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris,                    </span>
@@ -527,7 +539,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="histogram-with-geom_histogram" class="level2">
 <h2 class="anchored" data-anchor-id="histogram-with-geom_histogram">Histogram with <code>geom_histogram</code></h2>
-<p>Histogram shows the distribution of a continuous variable. You will sometimes get a message that suggests to select another <code>binwidth</code>. Do what is says and you will often get nicer plot (something nothing changes).</p>
+<p>Histogram shows the distribution of a continuous variable.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris,                    </span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length)) <span class="sc">+</span>     </span>
@@ -542,7 +554,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 </div>
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>  <span class="co"># geom_histogram(binwidth = 0.5)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You will sometimes get a message that suggests to select another <code>binwidth</code>. Do what is says and you will often get nicer plot (something nothing changes).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris,                    </span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length)) <span class="sc">+</span>     </span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="presentation3_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
 </div>
 </section>
 <section id="bar-chart-with-geom_bar" class="level2">
@@ -559,7 +583,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="presentation3_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="presentation3_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -568,7 +592,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="presentation3_files/figure-html/unnamed-chunk-14-2.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="presentation3_files/figure-html/unnamed-chunk-15-2.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -577,7 +601,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="presentation3_files/figure-html/unnamed-chunk-14-3.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="presentation3_files/figure-html/unnamed-chunk-15-3.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -589,7 +613,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="presentation3_files/figure-html/unnamed-chunk-14-4.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="presentation3_files/figure-html/unnamed-chunk-15-4.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -603,7 +627,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="presentation3_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="presentation3_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -617,12 +641,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="presentation3_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="presentation3_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
 <p>Add <code>position = "fill"</code> for bars to be normalized such that heights of the bars to represent percentages rather than counts.</p>
+<p>Additionally, themes can be added as a layer to any ggplot if you prefer a theme other than the default grey background.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris,                   </span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>      <span class="fu">aes</span>(<span class="at">x =</span> Flower.Color,   </span>
@@ -632,7 +657,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="presentation3_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="presentation3_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -649,7 +674,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="presentation3_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="presentation3_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -710,14 +735,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="presentation3_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="presentation3_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
 <p>We can also flip the chart. We update the plot, p, be reassignment.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> p <span class="sc">+</span> <span class="fu">coord_flip</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> p <span class="sc">+</span> <span class="fu">coord_flip</span>()</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>p</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="presentation3_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
 </div>
 <p>Since we are working with colors, we can change the colors of the bars to match the groups.</p>
 <p>R color chart <a href="http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf">here</a></p>
@@ -737,7 +771,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="presentation3_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="presentation3_files/figure-html/unnamed-chunk-26-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -772,7 +806,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="presentation3_files/figure-html/unnamed-chunk-27-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="presentation3_files/figure-html/unnamed-chunk-28-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>

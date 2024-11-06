@@ -222,6 +222,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../Exercises/exercises5_PART1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exercise 4, part 1: Statistics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Exercises/exercises5_PART2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exercise 4, part 2: Statistics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../Exercises/exercises6.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exercise 6: Data Exercise in R</span></a>
   </div>
@@ -239,13 +251,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Exercises/exercises2_SOLUTIONS.html" class="sidebar-item-text sidebar-link">
+  <a href="../Exercises/solution_not_up.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exercise 2 - Solution</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Exercises/exercises3_SOLUTIONS.html" class="sidebar-item-text sidebar-link">
+  <a href="../Exercises/solution_not_up.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exercise 3 - Solution</span></a>
   </div>
 </li>
@@ -350,7 +362,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="this-is-the-smallest-header-header-6" class="level6">
 <h6 class="anchored" data-anchor-id="this-is-the-smallest-header-header-6">This is the smallest header (Header 6)</h6>
 <p>Headers are marked with hashtags. More hashtags equals smaller title.</p>
-<p>This is normal text. Yes it is larger than the smallest header. A Quarto document works like a word document where we can write with <strong>bold</strong> or <em>italic</em> and insert thing like a table:</p>
+<p>This is normal text. Yes, it is larger than the smallest header. A Quarto document works similarly to a Word document where you can select tools from the toolbar to write in <strong>bold</strong> or <em>italic</em> and insert thing like a table:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -487,7 +499,7 @@ For executing the code, press the <code>Run</code> button in the top right of th
 </div>
 </div>
 <p><strong>Set working directory, setwd()</strong></p>
-<p>The working directory can changed BUT when working with Quarto this only influences individual code chunks. In opposition, a changing of wd within an <code>.R script</code> affects the document globally - we will not cover <code>.R scripts</code> in this course.<br>
+<p>The working directory can be changed BUT when working with Quarto this only influences individual code chunks. In contrast, a changing of wd within an <code>.R script</code> affects the document globally - we will not cover <code>.R scripts</code> in this course.<br>
 There are two type of paths, absolute paths (from root to desired location) and relative paths (from current location to desired location):</p>
 <p><em>Absolute path:</em></p>
 <div class="cell">
@@ -598,27 +610,27 @@ There are two type of paths, absolute paths (from root to desired location) and 
 <p>Summary statistics is information such as number of items, mean, median, standard deviation and sum.</p>
 <p><strong>Summary statistics of a vector</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(num2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(num2) <span class="co"># mean/average</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 4.9</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">median</span>(num2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">median</span>(num2) <span class="co"># median</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3.5</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sd</span>(num2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sd</span>(num2) <span class="co"># standard deviation</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 4.012481</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(num2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(num2) <span class="co"># sum</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 49</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>(num2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>(num2) <span class="co"># minimum value</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(num2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(num2) <span class="co"># maximum value</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 11</code></pre>
 </div>

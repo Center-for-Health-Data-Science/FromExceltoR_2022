@@ -95,7 +95,7 @@ ggplot(iris,
   geom_point()
 ```
 
-## Boxplot with `geom_histogram`
+## Boxplot with `geom_boxplot`
 
 Boxplots are great to get an overview of continues variables and spot outliers. Can be shown on either axis (x and y).
 
@@ -139,13 +139,20 @@ ggplot(iris,
 
 ## Histogram with `geom_histogram`
 
-Histogram shows the distribution of a continuous variable. You will sometimes get a message that suggests to select another `binwidth`. Do what is says and you will often get nicer plot (something nothing changes).
+Histogram shows the distribution of a continuous variable.
 
 ```{r}
 ggplot(iris,                    
        aes(x = Sepal.Length)) +     
   geom_histogram()
-  # geom_histogram(binwidth = 0.5)
+```
+
+You will sometimes get a message that suggests to select another `binwidth`. Do what is says and you will often get nicer plot (something nothing changes).
+
+```{r}
+ggplot(iris,                    
+       aes(x = Sepal.Length)) +     
+  geom_histogram(binwidth = 0.5)
 ```
 
 ## Bar chart with `geom_bar`
@@ -193,6 +200,8 @@ ggplot(iris,
 ```
 
 Add `position = "fill"` for bars to be normalized such that heights of the bars to represent percentages rather than counts.
+
+Additionally, themes can be added as a layer to any ggplot if you prefer a theme other than the default grey background.
 
 ```{r}
 ggplot(iris,                   
@@ -264,6 +273,8 @@ We can also flip the chart. We update the plot, p, be reassignment.
 
 ```{r}
 p <- p + coord_flip()
+
+p
 ```
 
 Since we are working with colors, we can change the colors of the bars to match the groups.

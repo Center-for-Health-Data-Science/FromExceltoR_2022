@@ -95,10 +95,6 @@ crohns %>%
 crohns %>%
   distinct(treat)
 
-# How many different treatments do we have?
-crohns %>%
-  distinct(treat)
-
 #From how many different countries do we have data?
 crohns %>%
   distinct(country)

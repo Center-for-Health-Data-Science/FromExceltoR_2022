@@ -25,7 +25,7 @@ Lets see how the pandoc `Pandoc Markdown` works:\
 
 Headers are marked with hashtags. More hashtags equals smaller title.
 
-This is normal text. Yes it is larger than the smallest header. A Quarto document works like a word document where we can write with **bold** or *italic* and insert thing like a table:
+This is normal text. Yes, it is larger than the smallest header. A Quarto document works similarly to a Word document where you can select tools from the toolbar to write in **bold** or *italic* and insert thing like a table:
 
 | My friends | Their favorite drink | Their favorite food |
 |------------|----------------------|---------------------|
@@ -147,7 +147,7 @@ getwd()
 
 **Set working directory, setwd()**
 
-The working directory can changed BUT when working with Quarto this only influences individual code chunks. In opposition, a changing of wd within an `.R script` affects the document globally - we will not cover `.R scripts` in this course.\
+The working directory can be changed BUT when working with Quarto this only influences individual code chunks. In contrast, a changing of wd within an `.R script` affects the document globally - we will not cover `.R scripts` in this course.\
 There are two type of paths, absolute paths (from root to desired location) and relative paths (from current location to desired location):
 
 *Absolute path:*
@@ -260,13 +260,13 @@ Summary statistics is information such as number of items, mean, median, standar
 **Summary statistics of a vector**
 
 ```{r}
-mean(num2)
-median(num2)
-sd(num2)
-sum(num2)
+mean(num2) # mean/average
+median(num2) # median
+sd(num2) # standard deviation
+sum(num2) # sum
 
-min(num2)
-max(num2)
+min(num2) # minimum value
+max(num2) # maximum value
 ```
 
 ## R packages
