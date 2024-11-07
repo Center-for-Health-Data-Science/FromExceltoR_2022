@@ -502,97 +502,6 @@
     ]
   },
   {
-    "objectID": "Presentations/presentation3_livecoding.html",
-    "href": "Presentations/presentation3_livecoding.html",
-    "title": "Presentation 3: ggplot2",
-    "section": "",
-    "text": "library(readxl)\nlibrary(writexl)\nlibrary(tidyverse)"
-  },
-  {
-    "objectID": "Presentations/presentation3_livecoding.html#importing-libraries-and-data",
-    "href": "Presentations/presentation3_livecoding.html#importing-libraries-and-data",
-    "title": "Presentation 3: ggplot2",
-    "section": "",
-    "text": "library(readxl)\nlibrary(writexl)\nlibrary(tidyverse)"
-  },
-  {
-    "objectID": "Presentations/presentation3_livecoding.html#load-data",
-    "href": "Presentations/presentation3_livecoding.html#load-data",
-    "title": "Presentation 3: ggplot2",
-    "section": "Load data",
-    "text": "Load data\nThe iris dataset is a widely-used dataset in data science, containing 150 observations of iris flowers with features like sepal length, sepal width, petal length, and petal width. It includes three species: Setosa, Versicolor, and Virginica, making it ideal for classification tasks and data visualization.\n\ndata('iris')\nhead(iris)\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species\n1          5.1         3.5          1.4         0.2  setosa\n2          4.9         3.0          1.4         0.2  setosa\n3          4.7         3.2          1.3         0.2  setosa\n4          4.6         3.1          1.5         0.2  setosa\n5          5.0         3.6          1.4         0.2  setosa\n6          5.4         3.9          1.7         0.4  setosa"
-  },
-  {
-    "objectID": "Presentations/presentation3_livecoding.html#data-wrangling",
-    "href": "Presentations/presentation3_livecoding.html#data-wrangling",
-    "title": "Presentation 3: ggplot2",
-    "section": "Data wrangling",
-    "text": "Data wrangling\nMaking the data more fun to plot.\n\n# Define 5 colors and their respective ratios\ncolors &lt;- c(rep(\"Red\", 40), \n            rep(\"Blue\", 20), \n            rep(\"Yellow\",30), \n            rep(\"Green\", 20),\n            rep(\"Purple\",40))\n\nset.seed(123)  # For reproducibility\n\n# Shuffle the colors to mix them randomly\ncolors &lt;- sample(colors, replace = TRUE)\n\n# Add the 'Flower.Color' column to the iris dataset\niris$Flower.Color &lt;- colors\n\n\nHave a look at the dataset\n\nhead(iris)\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species Flower.Color\n1          5.1         3.5          1.4         0.2  setosa          Red\n2          4.9         3.0          1.4         0.2  setosa         Blue\n3          4.7         3.2          1.3         0.2  setosa       Purple\n4          4.6         3.1          1.5         0.2  setosa         Blue\n5          5.0         3.6          1.4         0.2  setosa          Red\n6          5.4         3.9          1.7         0.4  setosa       Purple\n\ncolnames(iris)\n\n[1] \"Sepal.Length\" \"Sepal.Width\"  \"Petal.Length\" \"Petal.Width\"  \"Species\"     \n[6] \"Flower.Color\""
-  },
-  {
-    "objectID": "Presentations/presentation3_livecoding.html#ggplot2-the-basic-concepts",
-    "href": "Presentations/presentation3_livecoding.html#ggplot2-the-basic-concepts",
-    "title": "Presentation 3: ggplot2",
-    "section": "ggplot2: The basic concepts",
-    "text": "ggplot2: The basic concepts\nThis is the starting point of a ggplot. The dataframe and the columns we wish to plot are defined. We have not specified what type of plot we want, hence an empty plot is produced.\n\nggplot(iris,                    # dataframe \n       aes(x = Sepal.Length,    # x-value\n           y = Petal.Length))   # y-value\n\n\n\n\n\n\n\n                                # missing type of plot"
-  },
-  {
-    "objectID": "Presentations/presentation3_livecoding.html#scatter-plot-with-geom_point",
-    "href": "Presentations/presentation3_livecoding.html#scatter-plot-with-geom_point",
-    "title": "Presentation 3: ggplot2",
-    "section": "Scatter plot with geom_point",
-    "text": "Scatter plot with geom_point\nA scatter plot is made with the geom_point function and is used to get an overview over the relationship between two numeric variables. Here we see the relationship between sepal length and width.\n\nggplot(iris,                   \n       aes(x = Sepal.Length,    \n           y = Petal.Length)) \n\n\n\n\n\n\n\n# scatter plot\n# color all points\n# color by Species\n\nChange color of entire plot by setting it outside aes()."
-  },
-  {
-    "objectID": "Presentations/presentation3_livecoding.html#scatter-plot-with-geom_point-with-color-stratification",
-    "href": "Presentations/presentation3_livecoding.html#scatter-plot-with-geom_point-with-color-stratification",
-    "title": "Presentation 3: ggplot2",
-    "section": "Scatter plot with geom_point with color stratification",
-    "text": "Scatter plot with geom_point with color stratification\nTo change colors based on a feature, you need to set it inside aes(). Here we see the relationship between sepal length and width colored by species.\n\nggplot(iris,                   \n       aes(x = Sepal.Length,   \n           y = Petal.Length,\n           color = Species)) +  \n  geom_point()"
-  },
-  {
-    "objectID": "Presentations/presentation3_livecoding.html#boxplot-with-geom_boxplot",
-    "href": "Presentations/presentation3_livecoding.html#boxplot-with-geom_boxplot",
-    "title": "Presentation 3: ggplot2",
-    "section": "Boxplot with geom_boxplot",
-    "text": "Boxplot with geom_boxplot\nBoxplots are great to get an overview of continues variables and spot outliers. Can be shown on either axis (x and y).\n\nggplot(iris,                    \n       aes(y = Sepal.Length)) + \n  geom_boxplot() \n\n\n\n\n\n\n\n# boxplot\n# split up by Species (x)\n# color/fill by Species"
-  },
-  {
-    "objectID": "Presentations/presentation3_livecoding.html#violin-plot-with-geom_violin",
-    "href": "Presentations/presentation3_livecoding.html#violin-plot-with-geom_violin",
-    "title": "Presentation 3: ggplot2",
-    "section": "Violin plot with geom_violin",
-    "text": "Violin plot with geom_violin\nA violin plot shows the distribution of a continuous variable across different categories, combining the features of a box plot and a density plot. Also, the labels can be edited.\n\nggplot(iris,                    \n       aes(y = Sepal.Length,    \n           x = Species))\n\n\n\n\n\n\n\n# violin plot \n# add labs"
-  },
-  {
-    "objectID": "Presentations/presentation3_livecoding.html#histogram-with-geom_histogram",
-    "href": "Presentations/presentation3_livecoding.html#histogram-with-geom_histogram",
-    "title": "Presentation 3: ggplot2",
-    "section": "Histogram with geom_histogram",
-    "text": "Histogram with geom_histogram\nHistogram shows the distribution of a continuous variable. You will sometimes get a message that suggests to select another binwidth. Do what is says and you will often get nicer plot (something nothing changes).\n\nggplot(iris,                    \n       aes(x = Sepal.Length))  \n\n\n\n\n\n\n\n# histrogram   \n# binwidth = 0.5"
-  },
-  {
-    "objectID": "Presentations/presentation3_livecoding.html#bar-chart-with-geom_bar",
-    "href": "Presentations/presentation3_livecoding.html#bar-chart-with-geom_bar",
-    "title": "Presentation 3: ggplot2",
-    "section": "Bar chart with geom_bar",
-    "text": "Bar chart with geom_bar\nA bar chart is made with the geom_bar function and is used to get an overview over the distribution of a single categorical variable, e.g. Flower.Color in this instance. The function treats the x-axis as categorical and calculates the bar heights based on the number of occurrences in each category. Here we see the number of flowers of each Flower.Color. Notice that the Flower.Colors are sorted alphabetically.\n\n# Save plot in p\np &lt;- ggplot(iris,                    \n            aes(x = Flower.Color)) \n# barplot\n\n# Show p\n\n# Show p with new labels\n\n# Show p again\n\n# Save p with new lables in p (overwrite / reassign)\n\n# Show p\n\nColor by species. The bars are stacked by default.\n\n# copy plot from above\n# add fill Species \n# position 'dogde', 'stacked'\n\n# theme_bw()\n# theme_classic()  \n# theme_minimal()\n# theme_dark()\n\n# facet_wrap(vars(Species))"
-  },
-  {
-    "objectID": "Presentations/presentation3_livecoding.html#ordering-columns",
-    "href": "Presentations/presentation3_livecoding.html#ordering-columns",
-    "title": "Presentation 3: ggplot2",
-    "section": "Ordering columns",
-    "text": "Ordering columns\nWe can order the columns such that the count goes from lowest to highest. This is actually not that easy in R.\nFirst, we see that the class of the Flower.Color is character. Characters are always sorted alphabetically like we saw above.\n\nclass(iris$Flower.Color)\n\n[1] \"character\"\n\n\nExtract the number of flowers for each Flower.Color.\n\ndl_Flower.Color &lt;- iris %&gt;%\n  group_by(Flower.Color) %&gt;%\n  summarise(n = n()) %&gt;% \n  arrange(desc(n))\n\ndl_Flower.Color\n\n# A tibble: 5 × 2\n  Flower.Color     n\n  &lt;chr&gt;        &lt;int&gt;\n1 Red             44\n2 Yellow          33\n3 Purple          30\n4 Green           22\n5 Blue            21\n\ndl_Flower.Color$Flower.Color\n\n[1] \"Red\"    \"Yellow\" \"Purple\" \"Green\"  \"Blue\"  \n\n\nChange the class of the Flower.Color feature to factor and add levels according to the number of flowers with each color.\n\niris$Flower.Color &lt;- factor(iris$Flower.Color,\n                            levels = dl_Flower.Color$Flower.Color)\n\nCheck class now\n\nclass(iris$Flower.Color)\n\n[1] \"factor\"\n\n\nNow we do the same plot as before and we see that the order has changed to range from largest to smallest Flower.Colors group. The plot is saved in the variable p.\n\np &lt;- ggplot(iris,                # dataframe \n       aes(x = Flower.Color)) +  # x-value\n  geom_bar()                     # type of plot \n\np\n\n\n\n\n\n\n\n\nWe can also flip the chart. We update the plot, p, be reassignment.\n\np &lt;- p + coord_flip()\n\nSince we are working with colors, we can change the colors of the bars to match the groups.\nR color chart here\n\n# Define color palette\ncolor_palette &lt;- c(\"Red\" = \"red3\", \n                   \"Blue\" = \"cornflowerblue\", \n                   \"Yellow\" = \"lightgoldenrod1\", \n                   \"Green\" = \"darkolivegreen2\", \n                   \"Purple\" = \"darkorchid3\")\n\np &lt;- p + \n  aes(fill = Flower.Color) +                # add the fill ascetics \n  scale_fill_manual(values = color_palette) # set the fill color according to the color palette\n\nprint(p)"
-  },
-  {
-    "objectID": "Presentations/presentation3_livecoding.html#bar-chart-with-geom_col",
-    "href": "Presentations/presentation3_livecoding.html#bar-chart-with-geom_col",
-    "title": "Presentation 3: ggplot2",
-    "section": "Bar chart with geom_col",
-    "text": "Bar chart with geom_col\nAnother way to make a bar chart is by using geom_col. Unlike geom_bar, which only requires an x-value and automatically counts occurrences, geom_col requires both x- and y-values. This makes geom_col ideal for cases where you already have pre-calculated values that you want to use as the bar heights.\nThe mean of the sepal length within each color is calcualted using the summarize function.\n\nmean_sepal_length_pr_color &lt;- iris %&gt;%\n  group_by(Flower.Color) %&gt;%\n  summarize(mean_Sepal.Length = mean(Sepal.Length))\n\nhead(mean_sepal_length_pr_color)\n\n# A tibble: 5 × 2\n  Flower.Color mean_Sepal.Length\n  &lt;fct&gt;                    &lt;dbl&gt;\n1 Red                       5.88\n2 Yellow                    5.89\n3 Purple                    5.91\n4 Green                     5.65\n5 Blue                      5.79\n\n\n\nggplot(mean_sepal_length_pr_color,   \n       aes(x = Flower.Color,        \n           y = mean_Sepal.Length)) +\n  geom_col()"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "FromExceltoR",
@@ -621,32 +530,11 @@
     "text": "Code memes"
   },
   {
-    "objectID": "Presentations/video_test.html",
-    "href": "Presentations/video_test.html",
-    "title": "Video test",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "Presentations/video_test.html#my-first-quarto-document",
-    "href": "Presentations/video_test.html#my-first-quarto-document",
-    "title": "Video test",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "Presentations/video_test.html#adding-numbers-together",
-    "href": "Presentations/video_test.html#adding-numbers-together",
-    "title": "Video test",
-    "section": "Adding numbers together",
-    "text": "Adding numbers together\nDefine variables\n\na = 1\nb = 3\n\nLook at the variables\n\nprint(a)\n\n[1] 1\n\nprint(b)\n\n[1] 3\n\n\nMaking a new variable, c, which is the sum of a and b\n\n# This line will not be excecuted because of the hashtag\nc = a + b \n\nLook at the newly defined variable, c\n\nprint(c)\n\n[1] 4"
-  },
-  {
     "objectID": "Presentations/presentation1.html",
     "href": "Presentations/presentation1.html",
     "title": "Presentation 1: R, Rstudio and Quarto",
     "section": "",
-    "text": "Quarto is an open-source publishing suite - a tool-suite that supports workflows for reproducible scholarly writing and publishing.\nQuarto documents often begin with a YAML header demarcated by three dashes (---) which specifies things about the document. This includes what type of documents to render (compile) to e.g. HTML, PDF, WORD and whether it should be published to a website project. You can also add information on project title, author, default editor, etc.",
+    "text": "Download this file \n\nQuarto is an open-source publishing suite - a tool-suite that supports workflows for reproducible scholarly writing and publishing.\nQuarto documents often begin with a YAML header demarcated by three dashes (---) which specifies things about the document. This includes what type of documents to render (compile) to e.g. HTML, PDF, WORD and whether it should be published to a website project. You can also add information on project title, author, default editor, etc.",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",

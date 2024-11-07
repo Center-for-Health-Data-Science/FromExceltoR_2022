@@ -8,6 +8,12 @@ project:
 
 # The Quarto Way!
 
+<div style="display: flex; gap: 10px;">
+  <a href="./presentation1.qmd" download="presentation1.qmd">
+    <button class="btn small-button">Download this file</button>
+  </a>
+</div>
+
 [Quarto](https://quarto.org/) is an open-source publishing suite - a tool-suite that supports workflows for reproducible scholarly writing and publishing.
 
 Quarto documents often begin with a `YAML header` demarcated by three dashes (`---`) which specifies things about the document. This includes what type of documents to render (compile) to e.g. HTML, PDF, WORD and whether it should be published to a website project. You can also add information on project title, author, default editor, etc.
