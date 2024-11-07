@@ -390,16 +390,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 <p>… a picture:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://www.zooplus.co.uk/magazine/cat/kitten/how-to-monitor-your-kittens-weight"><img src="../images/striped-grey-kitten.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Miw" width="500"></a></p>
-</figure>
-</div>
-<figcaption>This is a cute cat</figcaption>
-</figure>
-</div>
+<p>[<img src="../images/striped-grey-kitten.jpg" class="img-fluid quarto-figure quarto-figure-center" alt="Miw" width="500">]</p>
+<p><a href="https://www.zooplus.co.uk/magazine/cat/kitten/how-to-monitor-your-kittens-weight">Picture source</a></p>
 <p>We can also make a list of things we like:</p>
 <ul>
 <li><p>Coffee</p></li>
@@ -495,7 +487,7 @@ For executing the code, press the <code>Run</code> button in the top right of th
 <div class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "/Users/srz223/Desktop/DataLab/FromExceltoR/Teachers/Presentations"</code></pre>
+<pre><code>[1] "/Users/kgx936/Desktop/HeaDS/GitHub_repos/FromExceltoR/Teachers/Presentations"</code></pre>
 </div>
 </div>
 <p><strong>Set working directory, setwd()</strong></p>
@@ -762,9 +754,13 @@ There are two type of paths, absolute paths (from root to desired location) and 
 <h2 class="anchored" data-anchor-id="fundamental-operations">Fundamental operations</h2>
 <p>You can inspect an R objects in different ways:</p>
 <p>1. Simply call it and it will be printed to the console. 2. With large object it is preferable to use `head()` or `tail()` to only see the first or last part. 3. To see the data in a tabular excel style format you can use `view()`</p>
-<p><strong>Look at the “head” of an object</strong></p>
+<p><strong>Remove something:</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(my_data, <span class="at">n =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(a)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Look at the “head” of an object:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(my_data, <span class="at">n =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 2
   name    joined_year
@@ -775,20 +771,20 @@ There are two type of paths, absolute paths (from root to desired location) and 
 4 Henrike        2021</code></pre>
 </div>
 </div>
-<p><strong>Open up tibble as a table (Excel style)</strong></p>
+<p><strong>Open up tibble as a table (Excel style):</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="fu">view</span>(my_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="fu">view</span>(my_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>dim(), short for dimensions, which returns the number of rows and columns of an R object</strong></p>
+<p><strong>dim(), short for dimensions, which returns the number of rows and columns of an R object:</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(my_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(my_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 8 2</code></pre>
 </div>
 </div>
-<p><strong>Look at a single column from a tibble using the ‘$’ symbol</strong></p>
+<p><strong>Look at a single column from a tibble using the ‘$’ symbol:</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a>my_data<span class="sc">$</span>joined_year</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb86"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a>my_data<span class="sc">$</span>joined_year</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2019 2020 2020 2021 2023 2022 2020 2024</code></pre>
 </div>

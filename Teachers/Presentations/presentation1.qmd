@@ -35,7 +35,9 @@ This is normal text. Yes, it is larger than the smallest header. A Quarto docume
 
 ... a picture:
 
-[![This is a cute cat](../images/striped-grey-kitten.jpg){fig-alt="Miw" fig-align="center" width="500"}](https://www.zooplus.co.uk/magazine/cat/kitten/how-to-monitor-your-kittens-weight)
+\[![This is a cute cat](../images/striped-grey-kitten.jpg){fig-alt="Miw" fig-align="center" width="500"}\]
+
+[Picture source](https://www.zooplus.co.uk/magazine/cat/kitten/how-to-monitor-your-kittens-weight)
 
 We can also make a list of things we like:
 
@@ -383,25 +385,31 @@ You can inspect an R objects in different ways:
 
 1\. Simply call it and it will be printed to the console. 2. With large object it is preferable to use \`head()\` or \`tail()\` to only see the first or last part. 3. To see the data in a tabular excel style format you can use \`view()\`
 
-**Look at the "head" of an object**
+**Remove something:**
+
+```{r}
+rm(a)
+```
+
+**Look at the "head" of an object:**
 
 ```{r}
 head(my_data, n = 4)
 ```
 
-**Open up tibble as a table (Excel style)**
+**Open up tibble as a table (Excel style):**
 
 ```{r}
 view(my_data)
 ```
 
-**dim(), short for dimensions, which returns the number of rows and columns of an R object**
+**dim(), short for dimensions, which returns the number of rows and columns of an R object:**
 
 ```{r}
 dim(my_data)
 ```
 
-**Look at a single column from a tibble using the '\$' symbol**
+**Look at a single column from a tibble using the '\$' symbol:**
 
 ```{r}
 my_data$joined_year
