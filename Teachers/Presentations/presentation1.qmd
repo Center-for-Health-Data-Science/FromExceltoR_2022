@@ -6,13 +6,16 @@ project:
   output-dir: ../docs
 ---
 
-# The Quarto Way!
-
+Want to code along?
 <div style="display: flex; gap: 10px;">
   <a href="./presentation1.qmd" download="presentation1.qmd">
-    <button class="btn small-button">Download this file</button>
+    <button class="btn small-button" style="background-color: #18bc9c; color: white; border: none; padding: 10px 20px; border-radius: 5px;">
+      Download the Quarto script
+    </button>
   </a>
 </div>
+
+# The Quarto Way!
 
 [Quarto](https://quarto.org/) is an open-source publishing suite - a tool-suite that supports workflows for reproducible scholarly writing and publishing.
 

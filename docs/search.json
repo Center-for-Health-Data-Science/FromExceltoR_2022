@@ -350,7 +350,7 @@
     "href": "Presentations/presentation3.html",
     "title": "Presentation 3: ggplot2",
     "section": "",
-    "text": "library(readxl)\nlibrary(writexl)\nlibrary(tidyverse)",
+    "text": "Download the Quarto script",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",
@@ -361,8 +361,8 @@
     "objectID": "Presentations/presentation3.html#importing-libraries-and-data",
     "href": "Presentations/presentation3.html#importing-libraries-and-data",
     "title": "Presentation 3: ggplot2",
-    "section": "",
-    "text": "library(readxl)\nlibrary(writexl)\nlibrary(tidyverse)",
+    "section": "Importing libraries and data",
+    "text": "Importing libraries and data\n\nlibrary(readxl)\nlibrary(writexl)\nlibrary(tidyverse)",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",
@@ -534,7 +534,7 @@
     "href": "Presentations/presentation1.html",
     "title": "Presentation 1: R, Rstudio and Quarto",
     "section": "",
-    "text": "Download this file \n\nQuarto is an open-source publishing suite - a tool-suite that supports workflows for reproducible scholarly writing and publishing.\nQuarto documents often begin with a YAML header demarcated by three dashes (---) which specifies things about the document. This includes what type of documents to render (compile) to e.g. HTML, PDF, WORD and whether it should be published to a website project. You can also add information on project title, author, default editor, etc.",
+    "text": "Download the Quarto script",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",
@@ -594,7 +594,7 @@
     "href": "Presentations/presentation1.html#working-directory",
     "title": "Presentation 1: R, Rstudio and Quarto",
     "section": "Working directory",
-    "text": "Working directory\nThe term path refers to the trajectory you need to follow from the place you are ‘located’ on your computer to the place you want to work from. When working with Quarto your working directory (wd) is always the same locations as your Quarto document (is not true for .R scripts!). The wd becomes important when we start loading data in from other places (presentation 2).\nWhere am I now? getwd()\n\ngetwd()\n\n[1] \"/Users/kgx936/Desktop/HeaDS/GitHub_repos/FromExceltoR/Teachers/Presentations\"\n\n\nSet working directory, setwd()\nThe working directory can be changed BUT when working with Quarto this only influences individual code chunks. In contrast, a changing of wd within an .R script affects the document globally - we will not cover .R scripts in this course.\nThere are two type of paths, absolute paths (from root to desired location) and relative paths (from current location to desired location):\nAbsolute path:\n\nsetwd(\"/Users/kgx936/Desktop/HeaDS/GitHub_repos/FromExceltoR\")\n\nRelative path:\n\nsetwd('./Exercises/')\n\nNavigate up in the directory tree (..)\n\nsetwd('../Teachers')\n\nPointing to a dataset\n\nload('/Users/kgx936/Desktop/HeaDS/GitHub_repos/FromExceltoR/Data/MyData.Rdata')",
+    "text": "Working directory\nThe term path refers to the trajectory you need to follow from the place you are ‘located’ on your computer to the place you want to work from. When working with Quarto your working directory (wd) is always the same locations as your Quarto document (is not true for .R scripts!). The wd becomes important when we start loading data in from other places (presentation 2).\nWhere am I now? getwd()\n\ngetwd()\n\n[1] \"/Users/srz223/Desktop/DataLab/FromExceltoR/Teachers/Presentations\"\n\n\nSet working directory, setwd()\nThe working directory can be changed BUT when working with Quarto this only influences individual code chunks. In contrast, a changing of wd within an .R script affects the document globally - we will not cover .R scripts in this course.\nThere are two type of paths, absolute paths (from root to desired location) and relative paths (from current location to desired location):\nAbsolute path:\n\nsetwd(\"/Users/kgx936/Desktop/HeaDS/GitHub_repos/FromExceltoR\")\n\nRelative path:\n\nsetwd('./Exercises/')\n\nNavigate up in the directory tree (..)\n\nsetwd('../Teachers')\n\nPointing to a dataset\n\nload('/Users/kgx936/Desktop/HeaDS/GitHub_repos/FromExceltoR/Data/MyData.Rdata')",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",
@@ -678,7 +678,7 @@
     "href": "Presentations/presentation2.html",
     "title": "Presentation 2: Tidyverse",
     "section": "",
-    "text": "# Load tidyverse package\nlibrary(tidyverse)\n# Load a package that can read excel files\nlibrary(readxl)\nlibrary(readr)",
+    "text": "Download the Quarto script",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",
@@ -689,8 +689,8 @@
     "objectID": "Presentations/presentation2.html#load-packages",
     "href": "Presentations/presentation2.html#load-packages",
     "title": "Presentation 2: Tidyverse",
-    "section": "",
-    "text": "# Load tidyverse package\nlibrary(tidyverse)\n# Load a package that can read excel files\nlibrary(readxl)\nlibrary(readr)",
+    "section": "Load packages",
+    "text": "Load packages\n\n# Load tidyverse package\nlibrary(tidyverse)\n# Load a package that can read excel files\nlibrary(readxl)\nlibrary(readr)",
     "crumbs": [
       "Course Material",
       "Presentations 👩🏽‍🏫",
@@ -846,7 +846,7 @@
     "href": "Presentations/data.html",
     "title": "Data",
     "section": "",
-    "text": "Go to https://github.com/Center-for-Health-Data-Science/FromExceltoR/blob/2024_Oct/Data.zip, click the ‘…’ icon in the top right and download the zipped Data folder. Unzip it and place it somewhere you can find it again. Read the section below about file structure for recommendations on this.",
+    "text": "DOWNLOAD DATA  \n\nAfter download, unzip the data folder and place it somewhere you can find it again. Read the section below about file structure for recommendations on this.",
     "crumbs": [
       "Course Material",
       "Data 🗂️"
@@ -857,7 +857,7 @@
     "href": "Presentations/data.html#download-data",
     "title": "Data",
     "section": "",
-    "text": "Go to https://github.com/Center-for-Health-Data-Science/FromExceltoR/blob/2024_Oct/Data.zip, click the ‘…’ icon in the top right and download the zipped Data folder. Unzip it and place it somewhere you can find it again. Read the section below about file structure for recommendations on this.",
+    "text": "DOWNLOAD DATA  \n\nAfter download, unzip the data folder and place it somewhere you can find it again. Read the section below about file structure for recommendations on this.",
     "crumbs": [
       "Course Material",
       "Data 🗂️"

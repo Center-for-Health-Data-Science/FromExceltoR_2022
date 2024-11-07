@@ -6,6 +6,15 @@ project:
   output-dir: ../docs
 ---
 
+Want to code along?
+<div style="display: flex; gap: 10px;">
+  <a href="./presentation2.qmd" download="presentation2.qmd">
+    <button class="btn small-button" style="background-color: #18bc9c; color: white; border: none; padding: 10px 20px; border-radius: 5px;">
+      Download the Quarto script
+    </button>
+  </a>
+</div>
+
 ## Load packages
 
 ```{r, message=FALSE}
