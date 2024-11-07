@@ -223,7 +223,7 @@ ggplot(iris,
   facet_wrap(vars(Species))
 ```
 
-## Ordering columns 
+## Ordering columns
 
 We can order the columns such that the count goes from lowest to highest. This is actually not that easy in R.
 
