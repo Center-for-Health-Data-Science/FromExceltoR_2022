@@ -9,7 +9,7 @@ project:
 ## Download data
 
 <div style="display: flex; gap: 10px;">
-  <a href="./../../Data" download="Data.zip">
+  <a href="./../../Data.zip" download="Data.zip">
     <button class="btn small-button" style="background-color: #18bc9c; color: white; border: none; padding: 10px 20px; border-radius: 5px;">
       DOWNLOAD DATA
     </button>
