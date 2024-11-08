@@ -1,5 +1,5 @@
 ---
-title: "Exersice 1: Introduction"
+title: "Exercise 1: Introduction"
 author: "HeaDS Data Science Lab, University of Copenhagen"
 format: html
 project:

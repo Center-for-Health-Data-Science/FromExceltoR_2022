@@ -43,19 +43,23 @@ website:
             text: "Exercise 2: Tidyverse"
           - href: Exercises/exercises3.qmd
             text: "Exercise 3: ggplot2"
-          - href: Exercises/exercises5_PART1.qmd
+          - href: Exercises/exercises4_PART1.qmd
             text: "Exercise 4, part 1: Statistics"
-          - href: Exercises/exercises5_PART2.qmd
+          - href: Exercises/exercises4_PART2.qmd
             text: "Exercise 4, part 2: Statistics"
-          - href: Exercises/exercises6.qmd
-            text: "Exercise 6: Data Exercise in R"
+          - href: Exercises/exercises5.qmd
+            text: "Exercise 5: Data Exercise in R"
       
       - section: "Solutions 💃🏻"
         contents:
-          - href: Exercises/solution_not_up.qmd # Exercises/exercises2_SOLUTIONS.qmd
+          - href: Solutions/solution_not_up.qmd # Solutions/exercises2_SOLUTIONS.qmd
             text: "Exercise 2 - Solution"
-          - href: Exercises/solution_not_up.qmd # Exercises/exercises3_SOLUTIONS.qmd
+          - href: Solutions/solution_not_up.qmd # Solutions/exercises3_SOLUTIONS.qmd
             text: "Exercise 3 - Solution"
+          - href: Solutions/solution_not_up.qmd # Solutions/solution4_PART1.qmd
+            text: "Exercise 4, part 1 - Solution"
+          - href: Solutions/solution_not_up.qmd # Solutions/solution4_PART2.qmd
+            text: "Exercise 4, part 1 - Solution"
             
       - section: "Cheat Sheets 👀"
         contents:
