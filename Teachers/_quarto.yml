@@ -59,7 +59,7 @@ website:
           - href: Solutions/solution_not_up.qmd # Solutions/solution4_PART1.qmd
             text: "Exercise 4, part 1 - Solution"
           - href: Solutions/solution_not_up.qmd # Solutions/solution4_PART2.qmd
-            text: "Exercise 4, part 1 - Solution"
+            text: "Exercise 4, part 2 - Solution"
             
       - section: "Cheat Sheets 👀"
         contents:
