@@ -6,15 +6,18 @@ project:
   output-dir: ../docs
 ---
 
-## Welcome to the main page
+## Welcome to the main page of From Excel to R
 
-This course is about going from Excel to R.
+This 2 day course serves as an introduction to the statistical programming language R for researchers at the Faculty of Health and Medical Sciences, University of Copenhagen. The course is build on code-along presentations and exercises in Quarto documents. 
+
+The course goes through the following topics:
+
+1. The basics of R, Rstudio and Quarto
+2. Data wrangling with tidyverse
+3. Plotting with ggplot2
+4. Basic applied data science and statistics
 
 Course participants, it would greatly help us if fill out our feedback: <https://forms.office.com/e/amK1D9wLtd>
-
-The course material is originally made by Professor Helle Sørensen and Associate Professor Bo Markussen, SCIENCE data lab, Department of Mathematical Sciences at the University of Copenhagen. Contact: [helle\@math.ku.dk](mailto:helle@math.ku.dk) or [bomar\@math.ku.dk](mailto:bomar@math.ku.dk).
-
-The introduction presentation is made by, and the course material is edited by Thilde Terkelsen, Academic officer, Center for Health Data Science, Faculty of Health and Medical Sciences, University of Copenhagen. Contact: [thilde.terkelsen\@sund.ku.dk](mailto:thilde.terkelsen@sund.ku.dk) or [andrejeva\@sund.ku.dk](mailto:andrejeva@sund.ku.dk)
 
 The material in this repository is for teaching purposes only and not to be distributed commercially.
 

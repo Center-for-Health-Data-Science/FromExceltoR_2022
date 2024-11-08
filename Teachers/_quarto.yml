@@ -59,6 +59,8 @@ website:
             
       - section: "Cheat Sheets 👀"
         contents:
+          - href: CheatSheet/quartoCheatSheet.pdf
+            text: "Base R"
           - href: CheatSheet/BaseRCheatSheet.pdf
             text: "Base R"
           - href: CheatSheet/TidyverseCheatSheet.pdf
