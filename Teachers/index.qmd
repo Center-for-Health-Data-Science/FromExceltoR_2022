@@ -8,14 +8,14 @@ project:
 
 ## Welcome to the main page of From Excel to R
 
-This 2 day course serves as an introduction to the statistical programming language R for researchers at the Faculty of Health and Medical Sciences, University of Copenhagen. The course is build on code-along presentations and exercises in Quarto documents. 
+This 2 day course serves as an introduction to the statistical programming language R for researchers at the Faculty of Health and Medical Sciences, University of Copenhagen. The course is build on code-along presentations and exercises in Quarto documents.
 
 The course goes through the following topics:
 
-1. The basics of R, Rstudio and Quarto
-2. Data wrangling with tidyverse
-3. Plotting with ggplot2
-4. Basic applied data science and statistics
+1.  The basics of R, Rstudio and Quarto
+2.  Data wrangling with tidyverse
+3.  Plotting with ggplot2
+4.  Basic applied data science and statistics
 
 Course participants, it would greatly help us if fill out our feedback: <https://forms.office.com/e/amK1D9wLtd>
 
