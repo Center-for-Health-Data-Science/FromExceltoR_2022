@@ -7,13 +7,10 @@ project:
 ---
 
 Want to code along?
-<div style="display: flex; gap: 10px;">
-  <a href="./presentation2.qmd" download="presentation2.qmd">
-    <button class="btn small-button" style="background-color: #18bc9c; color: white; border: none; padding: 10px 20px; border-radius: 5px;">
-      Download the Quarto script
-    </button>
-  </a>
-</div>
+
+::: {style="display: flex; gap: 10px;"}
+<a href="./presentation2.qmd" download="presentation2.qmd"> <button class="btn small-button" style="background-color: #18bc9c; color: white; border: none; padding: 10px 20px; border-radius: 5px;"> Download the Quarto script </button> </a>
+:::
 
 ## Load packages
 
@@ -70,15 +67,16 @@ str(crohns)
 
 ## The anatomy of tidyverse
 
-Tidyverse is a collection of R packages that are great for data wrangling and visualizations. Tidyverse is often coded in a specific syntax that we will go through now.
+Tidyverse is a collection of R packages that are great for data wrangling and visualizations. Data wrangling with functions from the Tidyverse are often used with a specific syntax:
 
-1.  The name of the new object you are creating. Can omit if you don't want to save the result.
+1.  The name of the variable you are creating. Can omit if you don't want to save the result.
 
-2.  The dataset we are working on.
+2.  The name of the dataset we are working on.
 
-3.  The function you want to perform on the dataset.
+3.  The function you want to apply on the dataset (and whatever arguments must be provided to the function).
 
-In tidyverse we use the pipe symbol `%>%`. Always make a new line after the pipe symbol for good structure.
+In tidyverse we use the `pipe symbol %>%` to chain multiple functions together. The term `pipe` comes from the fact that we pipe the output from one function into another function as the input.   
+It is a good idea to make a new line after each pipe symbol.
 
 ```{r}
 # new_object <- dataset %>%
@@ -101,11 +99,11 @@ crohns %>%
 
 ```{r}
 # How many different treatments do we have? 
-crohns %>%
+crohns %>% 
   distinct(treat)
 
 #From how many different countries do we have data?
-crohns %>%
+crohns %>% 
   distinct(country)
 ```
 
@@ -331,7 +329,7 @@ crohns %>%
 
 By itself, group_by does nothing, we still get the same dataset returned. But it is very useful in combination with other commands! The reason we want to do it this is way is that we can first impose grouping with `group_by()` and then pipe, `%>%`, the resulting tibble into summarize which will respect our grouping. So smart!
 
-```{r}
+```{r, message=FALSE}
 crohns %>%                      # the dataset
   group_by(sex) %>%             # grouped by sex
   summarise(avg = mean(age),    # calculate mean of the age
@@ -344,7 +342,7 @@ Now we see why `n()` is useful: It tells us how many lines, i.e. patients are in
 
 Group by sex and treatment, and calculate stats for the number of adverse events.
 
-```{r}
+```{r, message=FALSE}
 crohns %>%                              # the dataset
   group_by(sex, treat) %>%              # grouped by sex
   summarise(avg = mean(nrAdvE),         # calculate mean number of adverse events
@@ -359,7 +357,7 @@ crohns %>%                              # the dataset
 
 Many commands can be combined with the pipe operator to pipe data through an analysis workflow.
 
-```{r}
+```{r, message=FALSE}
 crohns %>%                              # the dataset
   filter(age > 65) %>%                  # filtered to only people over 65
   group_by(sex, treat) %>%              # Grouping 
@@ -374,6 +372,6 @@ crohns %>%                              # the dataset
 
 What if I want to do the same analysis but with only obese patients? The CDC lists a BMI of \> 30 as obese.
 
-```{r}
-
+```{r, message=FALSE}
+     
 ```
