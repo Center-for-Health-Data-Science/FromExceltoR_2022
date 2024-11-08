@@ -21,9 +21,3 @@ The material in this repository is for teaching purposes only and not to be dist
 ## Program
 
 ![](images/Program.png)
-
-## Code memes
-
-![](images/god_knows.jpeg){fig-align="center" width="500"}
-
-![](images/dog_chatgpt.jpeg){fig-align="center" width="350"}
