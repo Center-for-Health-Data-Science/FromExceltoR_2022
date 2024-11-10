@@ -1,5 +1,5 @@
 ---
-title: "Exercise 6: Data Exercise in R"
+title: "Exercise 5: Data Exercise in R"
 author: "HeaDS Data Science Lab, University of Copenhagen"
 format: html
 project:
