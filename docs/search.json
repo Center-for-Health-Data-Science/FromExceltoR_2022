@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "FromExceltoR",
+    "section": "",
+    "text": "This 2 day course serves as an introduction to the statistical programming language R for researchers at the Faculty of Health and Medical Sciences, University of Copenhagen. The course is build on code-along presentations and exercises in Quarto documents.\nThe course goes through the following topics:\n\nThe basics of R, Rstudio and Quarto\nData wrangling with tidyverse\nPlotting with ggplot2\nBasic applied data science and statistics\n\nCourse participants, it would greatly help us if fill out our feedback.\nThe material in this repository is for teaching purposes only and not to be distributed commercially.\nWe will use Quarto for the tutorials of this course. Please see more about Quarto following the links below.\nQuarto website\n“Getting started with Quarto” tutorial for RStudio\n“Get started with Quarto” video for RStudio\nComprehensive guides to Quarto basics"
+  },
+  {
+    "objectID": "index.html#welcome-to-the-main-page-of-from-excel-to-r",
+    "href": "index.html#welcome-to-the-main-page-of-from-excel-to-r",
+    "title": "FromExceltoR",
+    "section": "",
+    "text": "This 2 day course serves as an introduction to the statistical programming language R for researchers at the Faculty of Health and Medical Sciences, University of Copenhagen. The course is build on code-along presentations and exercises in Quarto documents.\nThe course goes through the following topics:\n\nThe basics of R, Rstudio and Quarto\nData wrangling with tidyverse\nPlotting with ggplot2\nBasic applied data science and statistics\n\nCourse participants, it would greatly help us if fill out our feedback.\nThe material in this repository is for teaching purposes only and not to be distributed commercially.\nWe will use Quarto for the tutorials of this course. Please see more about Quarto following the links below.\nQuarto website\n“Getting started with Quarto” tutorial for RStudio\n“Get started with Quarto” video for RStudio\nComprehensive guides to Quarto basics"
+  },
+  {
+    "objectID": "index.html#program",
+    "href": "index.html#program",
+    "title": "FromExceltoR",
+    "section": "Program",
+    "text": "Program"
+  }
+]
