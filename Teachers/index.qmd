@@ -17,7 +17,7 @@ The course goes through the following topics:
 3.  Plotting with ggplot2
 4.  Basic applied data science and statistics
 
-Course participants, it would greatly help us if fill out our feedback: <https://forms.office.com/e/amK1D9wLtd>
+Course participants, it would greatly help us if fill out our [feedback](https://forms.office.com/e/amK1D9wLtd).
 
 The material in this repository is for teaching purposes only and not to be distributed commercially.
 
