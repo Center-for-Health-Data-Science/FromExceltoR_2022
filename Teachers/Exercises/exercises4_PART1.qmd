@@ -146,5 +146,3 @@ It might be that the gene expression in two of the three groups may or may not b
 ```
 
 QUESTION 5: What is your conclusion from the pairwise comparisons?
-
-When done with this exercise, please write 1-2 sentences about your final conclusion(s) on the association between GeneD expression and psoriasis here (One post per group): https://ucph.padlet.org/tugcekaraderi/x8ybz5n8ilzbqnm2
