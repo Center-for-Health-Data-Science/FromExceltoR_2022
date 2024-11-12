@@ -387,6 +387,7 @@ window.Quarto = {
 </header>
 
 
+<p>This part might be easier to follow from the Quarto document. You will use the following <a href="https://github.com/Center-for-Health-Data-Science/FromExceltoR/blob/2024_Oct/Teachers/Exercises/exercises4_PART2.qmd">exercise4_PART2.qmd</a> file. Please clink on the link, download and open the file in your RStudio.</p>
 <p>Except for the last two parts, this exercise is about analysis with so-called <em>Gaussian linear models</em>. This is the class of models where data points are assumed to be independent, Gaussian (i.e.&nbsp;with a normal distribution) and with the same variance. All such models are fitted with the <code>lm</code> function in R, like so:<br>
 <code>lm(y~x, data = my.data)</code><br>
 The term <em>regression</em> is usually used for models where all explanatory variables are numerical, whereas the term <em>analysis of variance</em> (ANOVA) is usually used for models where all explanatory variables are categorical (i.e.&nbsp;factors). However, predictors of both types can be included in the same Gaussian linear model. In the end, we are also concerned with logistic regression models (for binary outcomes e.g.&nbsp;cases vs.&nbsp;controls) and linear mixed models (for data with a block structure).</p>
@@ -435,7 +436,8 @@ Modify it further such that the symbol types are different for smokers and non-s
 <li><p>Fit a linear regression model with <code>bwt</code> as response and <code>lwt</code> as covariate, and identify the estimates for the intercept and for the slope. Find the 95% confidence interval for the slope parameter by using the <code>confint()</code> function.</p></li>
 <li><p>Just by calling <code>plot()</code> on your regression model you made you can carry out model validation. Does the model seem appropriate for the data?</p></li>
 <li><p>Fit the multiple linear regression model where you include <code>lwt</code> as well as <code>age</code> and <code>ftv</code> (numerical variables) as covariates. Identify the parameter estimates, and consider what their interpretation is.</p></li>
-<li><p>Try the following commands, and see if you can figure out what the outcome means. You should replace <code>reg2</code> with the name of the model object from the previous question.</p></li>
+<li><p>Try the following commands, and see if you can figure out what the outcome means. You should replace <code>reg2</code> with the name of the model object from the previous question.<br>
+</p></li>
 </ol>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>newData <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">lwt=</span><span class="dv">100</span>, <span class="at">age=</span><span class="dv">25</span>, <span class="at">ftv=</span><span class="dv">0</span>)</span>
