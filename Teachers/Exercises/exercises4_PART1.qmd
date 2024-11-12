@@ -17,8 +17,6 @@ knitr::opts_chunk$set(echo = TRUE, eval = TRUE, warning = FALSE)
 
 ## Structure of a biostatistical analysis in R
 
-When done with this exercise, please write 1-2 sentences about your final conclusion(s) on the association between GeneD expression and psoriasis here (One post per group): https://ucph.padlet.org/tugcekaraderi/x8ybz5n8ilzbqnm2
-
 The very basic structure of an R script doing a classical statistical analysis is as follows:
 
 -   Load packages that you will be using.\
