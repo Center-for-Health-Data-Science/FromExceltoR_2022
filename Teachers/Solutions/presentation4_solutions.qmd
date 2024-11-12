@@ -130,7 +130,7 @@ oneway <- lm(log(IGFL4) ~ type, data=psorData)
 # View the model coefficients
 oneway
 
-# The intercept in this model represents the mean value (in log scale) of IGFL4 expression for healthy individuals in the dataset. 
+# The intercept in this model represents the mean value (on log scale) of IGFL4 expression for healthy individuals in the dataset. 
 # The coefficients represent the differences in the means for IGFL4 expression across skin type categories, [psne - healthy] and [psor - healthy], respectively.
 # Hence, the coefficients are in comparison to the reference category (i.e. reference level). Here, 'healthy' by default. The default reference level order is based on alphabetical or numerical ordering. You can use the levels() function to find the reference level. It is always the first one listed in levels(). 
 levels(psorData$type) 
