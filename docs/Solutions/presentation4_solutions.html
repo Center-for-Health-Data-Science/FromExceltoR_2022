@@ -306,13 +306,13 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Solutions/solution_not_up.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exercise 4, part 1 - Solution</span></a>
+ <span class="menu-text">Exercise 4, Part 1 - Solution</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Solutions/solution_not_up.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exercise 4, part 2 - Solution</span></a>
+ <span class="menu-text">Exercise 4, Part 2 - Solution</span></a>
   </div>
 </li>
       </ul>
@@ -576,7 +576,7 @@ Coefficients:
 (Intercept)     typepsne     typepsor  
     0.27910      0.01724     -0.35794  </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The intercept in this model represents the mean value of IGFL4 expression for healthy individuals in the dataset. </span></span>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The intercept in this model represents the mean value (in log scale) of IGFL4 expression for healthy individuals in the dataset. </span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co"># The coefficients represent the differences in the means for IGFL4 expression across skin type categories, [psne - healthy] and [psor - healthy], respectively.</span></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Hence, the coefficients are in comparison to the reference category (i.e. reference level). Here, 'healthy' by default. The default reference level order is based on alphabetical or numerical ordering. You can use the levels() function to find the reference level. It is always the first one listed in levels(). </span></span>
 <span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(psorData<span class="sc">$</span>type) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
