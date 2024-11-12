@@ -31,6 +31,8 @@ website:
             text: "Presentation 2: Tidyverse"
           - href: Presentations/presentation3.qmd
             text: "Presentation 3: ggplot2"
+          - href: Presentations/presentation4.qmd
+            text: "Presentation 4: Applied Statistics in R"
 
       - href: Presentations/data.qmd
         text: "Data 🗂️"
@@ -44,18 +46,20 @@ website:
           - href: Exercises/exercises3.qmd
             text: "Exercise 3: ggplot2"
           - href: Exercises/exercises4_PART1.qmd
-            text: "Exercise 4, part 1: Statistics"
+            text: "Exercise 4, part 1: Applied Statistics"
           - href: Exercises/exercises4_PART2.qmd
-            text: "Exercise 4, part 2: Statistics"
+            text: "Exercise 4, part 2: Applied Statistics"
           - href: Exercises/exercises5.qmd
             text: "Exercise 5: Data Exercise in R"
       
       - section: "Solutions 💃🏻"
         contents:
-          - href: Solutions/solution_not_up.qmd # Solutions/exercises2_SOLUTIONS.qmd
+          - href: Solutions/exercises2_SOLUTIONS.qmd # Solutions/solution_not_up.qmd # 
             text: "Exercise 2 - Solution"
-          - href: Solutions/solution_not_up.qmd # Solutions/exercises3_SOLUTIONS.qmd
+          - href: Solutions/exercises3_SOLUTIONS.qmd # Solutions/solution_not_up.qmd # 
             text: "Exercise 3 - Solution"
+          - href: Solutions/presentation4_solutions.qmd
+            text: "Presentation 4: Applied Statistics in R - Solutions"
           - href: Solutions/solution_not_up.qmd # Solutions/solution4_PART1.qmd
             text: "Exercise 4, part 1 - Solution"
           - href: Solutions/solution_not_up.qmd # Solutions/solution4_PART2.qmd
