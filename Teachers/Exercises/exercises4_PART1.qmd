@@ -7,7 +7,7 @@ project:
   output-dir: ../docs
 ---
 
-This part might be easier to follow from the Quarto document. You will use the following [exercise4_PART1.qmd](https://github.com/Center-for-Health-Data-Science/FromExceltoR/blob/2024_Oct/Teachers/Exercises/exercises4_PART1.qmd) file. Please clink on the link, download and open the file in your RStudio.
+This part is easier to follow from the Quarto document. You will use the following [exercise4_PART1.qmd](https://github.com/Center-for-Health-Data-Science/FromExceltoR/blob/2024_Oct/Teachers/Exercises/exercises4_PART1.qmd) file. Please clink on the link, download and open the file in your RStudio.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, eval = TRUE, warning = FALSE)
