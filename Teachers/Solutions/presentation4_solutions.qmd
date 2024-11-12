@@ -11,7 +11,9 @@ project:
 knitr::opts_chunk$set(echo = TRUE, eval = TRUE, warning = FALSE)
 ```
 
-## Structure of a biostatistical analysis in R
+You can download the [presentation4_solutions.qmd](https://github.com/Center-for-Health-Data-Science/FromExceltoR/blob/2024_Oct/Teachers/Solutions/presentation4_solutions.qmd) file and explore it in your RStudio. Just clink on the file link, download from GitHub and open the file in your local RStudio.
+
+\## Structure of a biostatistical analysis in R
 
 The very basic structure of an R script doing a classical statistical analysis is as follows:
 
