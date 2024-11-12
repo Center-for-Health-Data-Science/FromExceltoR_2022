@@ -61,9 +61,9 @@ website:
           - href: Solutions/presentation4_solutions.qmd
             text: "Presentation 4: Applied Statistics in R - Solutions"
           - href: Solutions/solution_not_up.qmd # Solutions/solution4_PART1.qmd
-            text: "Exercise 4, part 1 - Solution"
+            text: "Exercise 4, Part 1 - Solution"
           - href: Solutions/solution_not_up.qmd # Solutions/solution4_PART2.qmd
-            text: "Exercise 4, part 2 - Solution"
+            text: "Exercise 4, Part 2 - Solution"
             
       - section: "Cheat Sheets 👀"
         contents:
