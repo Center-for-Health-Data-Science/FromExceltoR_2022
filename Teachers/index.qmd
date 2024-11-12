@@ -21,8 +21,8 @@ The course goes through the following topics:
 The material in this repository is for teaching purposes only and not to be distributed commercially.
 
 \
-We will use Quarto for the tutorials of this course. Please see more about Quarto following the links below. \
-[Quarto website](https://quarto.org) \
+We will use Quarto for the tutorials of this course. Please see more about Quarto following the links below.\
+[Quarto website](https://quarto.org)\
 ["Get started with Quarto" tutorial for RStudio](https://quarto.org/docs/get-started/hello/rstudio.html)\
 ["Get started with Quarto" video for RStudio\
 ](https://www.youtube.com/watch?v=_f3latmOhew)[Comprehensive guides to Quarto basics](https://quarto.org/docs/guide/)
@@ -33,3 +33,7 @@ Finally... Dear course participants, it would greatly help us if you could compl
 ## Program
 
 ![](images/Program.png)
+
+Quick solution to get the qmd file needed for the Applied Statistics session! :)
+
+We will use the following [presentation4.qmd](https://github.com/Center-for-Health-Data-Science/FromExceltoR/blob/2024_Oct/Teachers/Presentations/presentation4.qmd) file for this presentation. Please clink on the link, download and open the file in your RStudio.
