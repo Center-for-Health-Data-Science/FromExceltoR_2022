@@ -33,7 +33,3 @@ Finally... Dear course participants, it would greatly help us if you could compl
 ## Program
 
 ![](images/Program.png)
-
-Quick solution to get the qmd file needed for the Applied Statistics session! :)
-
-We will use the following [presentation4.qmd](https://github.com/Center-for-Health-Data-Science/FromExceltoR/blob/2024_Oct/Teachers/Presentations/presentation4.qmd) file for this presentation. Please clink on the link, download and open the file in your RStudio.
