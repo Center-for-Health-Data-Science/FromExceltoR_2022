@@ -1,5 +1,5 @@
 ---
-title: "Exercise 4, part 2: Applied Statistics in R - Solutions"
+title: "Exercise 4, Part 2: Applied Statistics in R - Solutions"
 format: html
 author: "HeaDS Data Science Lab, University of Copenhagen"
 project:
@@ -11,7 +11,7 @@ project:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-You can download the [exercise4_PART2_solutions](https://github.com/Center-for-Health-Data-Science/FromExceltoR/blob/2024_Oct/Teachers/Solutions/presentation4_solutions.qmd)[.qmd](https://github.com/Center-for-Health-Data-Science/FromExceltoR/blob/2024_Oct/Teachers/Solutions/presentation4_solutions.qmd) file and explore it in your RStudio. Just clink on the file link, download from GitHub and open the file in your local RStudio.
+You can download the [exercise4_PART2_solutions.qmd](https://github.com/Center-for-Health-Data-Science/FromExceltoR/blob/2024_Oct/Teachers/Solutions/exercise4_PART2_solutions.qmd) file and explore it in your RStudio. Just clink on the file link, download from GitHub and open the file in your local RStudio.
 
 ```{r, include=FALSE}
 library(tidyverse)
