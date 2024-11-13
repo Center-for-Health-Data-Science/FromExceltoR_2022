@@ -1,5 +1,5 @@
 ---
-title: "Exercise 4, part 1: Applied Statistics in R - Solutions"
+title: "Exercise 4, Part 1: Applied Statistics in R - Solutions"
 format: html
 author: "HeaDS Data Science Lab, University of Copenhagen"
 project:
@@ -11,7 +11,7 @@ project:
 knitr::opts_chunk$set(echo = TRUE, eval = TRUE, warning = FALSE)
 ```
 
-You can download the [exercise4_PART1_solutions](https://github.com/Center-for-Health-Data-Science/FromExceltoR/blob/2024_Oct/Teachers/Solutions/presentation4_solutions.qmd)[.qmd](https://github.com/Center-for-Health-Data-Science/FromExceltoR/blob/2024_Oct/Teachers/Solutions/presentation4_solutions.qmd) file and explore it in your RStudio. Just clink on the file link, download from GitHub and open the file in your local RStudio.
+You can download the [exercise4_PART1_solutions.qmd](https://github.com/Center-for-Health-Data-Science/FromExceltoR/blob/2024_Oct/Teachers/Solutions/exercise4_PART1_solutions.qmd) file and explore it in your RStudio. Just clink on the file link, download from GitHub and open the file in your local RStudio.
 
 ## Structure of a biostatistical analysis in R
 
@@ -118,8 +118,7 @@ emmeans(oneway,~type)
 pairs(emmeans(oneway,~type))
 ```
 
-GeneD expression levels are significantly different between all three groups of skin samples when we perform pairwise comparisons across the three groups ([1]healthy - psne, [2]healthy - psor and [3]psne - psor; all p-values \< 0.05).
-
+GeneD expression levels are significantly different between all three groups of skin samples when we perform pairwise comparisons across the three groups (\[1\]healthy - psne, \[2\]healthy - psor and \[3\]psne - psor; all p-values \< 0.05).
 
 ## Outlook: Other analyses
 
