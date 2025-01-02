@@ -1,0 +1,23 @@
+/*-- scss:defaults --*/
+// Base document colors
+$body-bg: #1E2229;
+$body-color: white;
+$link-color: #3986C7;
+$toc-color: #3986C7;
+
+// Navbar
+$navbar-bg: #404857;
+
+// Code blocks
+$code-block-bg-alpha: -.8;
+$code-color: white;
+$code-bg: #404857;
+
+// Code output block
+.cell-output {
+  background-color: #858E98;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+

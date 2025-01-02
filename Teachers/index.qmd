@@ -32,4 +32,4 @@ Finally... Dear course participants, it would greatly help us if you could compl
 
 ## Program
 
-![](images/Program.png)
+![](Figures/Program.png)
