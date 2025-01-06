@@ -408,7 +408,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Save the file in your scripts directory.</p></li>
 <li><p>In the bottom-right panel, navigate to the file you just saved.</p></li>
 </ol>
-<p>When doing data science, you often work with some kind of input files, like an Excel sheet from the lab. It is therefore important that you know how to navigate to files from your R script. The directories you need to go through to find your input file can either be <strong>absolute</strong> or <strong>relative</strong>: - <strong>Absolute path</strong>: The path from the root of your file system to the input file. - <strong>Relative path</strong>: The path from the working directory to the input file.</p>
+<p>When doing data science, you often work with some kind of input files, like an Excel sheet from the lab. It is therefore important that you know how to navigate to files from your R script. The directories you need to go through to find your input file can either be <strong>absolute</strong> or <strong>relative</strong>:</p>
+<ul>
+<li><p><strong>Absolute path</strong>: The path from the root of your file system to the input file.</p></li>
+<li><p><strong>Relative path</strong>: The path from the working directory to the input file.</p></li>
+</ul>
 <p>We will try to find both paths to the <code>climate.xlsx</code> file in the <code>Data</code> directory.</p>
 <section id="step-1-absolute-path" class="level3">
 <h3 class="anchored" data-anchor-id="step-1-absolute-path">Step 1: Absolute Path</h3>
@@ -451,10 +455,8 @@ Absolute path example
 <li><p>Put your cursor between the two quotation marks.</p></li>
 <li><p>Press the <strong>tab key</strong>. What do you see?</p></li>
 <li><p>Write two periods and a slash (<code>../</code>):</p></li>
-<li><p>Now place the cursor between the slash and the quotation mark and press the <strong>tab key</strong> again. What do you see? Use the <strong>tab key</strong> to navigate to the <code>climate.xlsx</code> file.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>relative_path <span class="ot">&lt;-</span> <span class="st">"../"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></li>
+<li><p>Now place the cursor between the slash and the quotation mark and press the <strong>tab key</strong> again. What do you see?</p></li>
+<li><p>Use the <strong>tab key</strong> to navigate to the <code>climate.xlsx</code> file through the simplest path. <strong>NB</strong> This might include deleting the initial <code>../</code>.</p></li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
@@ -462,14 +464,23 @@ Absolute path example
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Relative path example
+Relative path examples
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>relative_path <span class="ot">&lt;-</span> <span class="st">"../Data/climate.xlsx"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"~/Desktop/Stuff/Courses/GreatestCourse/FromExceltoR"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>relative_path <span class="ot">&lt;-</span> <span class="st">"/Data/climate.xlsx"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"~/Desktop/Stuff/Courses/GreatestCourse/FromExceltoR/Script"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>relative_path <span class="ot">&lt;-</span> <span class="st">"../Data/climate.xlsx"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"~/Desktop/Stuff/Projects/RNAseq/TheGreatProject"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>relative_path <span class="ot">&lt;-</span> <span class="st">"../../../Courses/GreatestCourse/FromExceltoR/Data/climate.xlsx"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
