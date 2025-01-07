@@ -33,4 +33,4 @@ The material in this repository is for teaching purposes only and not to be dist
 
 ## Program
 
-![image](https://github.com/Center-for-Health-Data-Science/FromExceltoR/blob/2024_Oct/Teachers/images/Program.png)
+![image](https://github.com/Center-for-Health-Data-Science/FromExceltoR/blob/2024_Oct/Teachers/Figures/Program.png)
