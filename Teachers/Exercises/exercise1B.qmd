@@ -163,7 +163,18 @@ While working with R, you will get a lot of error messages. Some are easy to und
 ## Wrapping up
 
 26. Imagine you need to send your code to a collaborator. Review your code to ensure it is clear and well-structured, so your collaborator can easily understand and follow your work. You might consider emphasizing important points by making text **bold**, [underlined]{.underline} or [blue]{style="color:blue"}.
+
 27. Render your Quarto document by clicking the Render button with the blue arrow in the toolbar. Once the HTML file is generated, open it in a web browser. Does the document look as you expected? Iterate on your document until it meets your desired format and appearance.
+
+## Extra
+
+28. 
+**Mac**
+If you want to render your document to a PDF you need to install `tinyex`. 
+
+Go to https://quarto.org/docs/download/ and install Quarto. 
+
+In the top of your console window, switch to **Terminal**. (If the Terminal is not there go to *Tools* → *Terminal* → *New Terminal*.) Write `quarto install tinytex` in the terminal and press enter. When it has completed and gives the message *Installation successful*, change the YAML in the every top of your Quarto document from `format: html` to `format: pdf`. Save and render your Quarto document again and review the PDF file. 
 
 ## Lessons learnt
 

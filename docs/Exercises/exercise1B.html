@@ -357,6 +357,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#shut-down-r" id="toc-shut-down-r" class="nav-link" data-scroll-target="#shut-down-r">Shut down R</a></li>
   <li><a href="#getting-help-in-r" id="toc-getting-help-in-r" class="nav-link" data-scroll-target="#getting-help-in-r">Getting help in R</a></li>
   <li><a href="#wrapping-up" id="toc-wrapping-up" class="nav-link" data-scroll-target="#wrapping-up">Wrapping up</a></li>
+  <li><a href="#extra" id="toc-extra" class="nav-link" data-scroll-target="#extra">Extra</a></li>
   <li><a href="#lessons-learnt" id="toc-lessons-learnt" class="nav-link" data-scroll-target="#lessons-learnt">Lessons learnt</a></li>
   </ul>
 </nav>
@@ -525,9 +526,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="wrapping-up" class="level2">
 <h2 class="anchored" data-anchor-id="wrapping-up">Wrapping up</h2>
 <ol start="26" type="1">
-<li>Imagine you need to send your code to a collaborator. Review your code to ensure it is clear and well-structured, so your collaborator can easily understand and follow your work. You might consider emphasizing important points by making text <strong>bold</strong>, <u>underlined</u> or <span style="color:blue">blue</span>.</li>
-<li>Render your Quarto document by clicking the Render button with the blue arrow in the toolbar. Once the HTML file is generated, open it in a web browser. Does the document look as you expected? Iterate on your document until it meets your desired format and appearance.</li>
+<li><p>Imagine you need to send your code to a collaborator. Review your code to ensure it is clear and well-structured, so your collaborator can easily understand and follow your work. You might consider emphasizing important points by making text <strong>bold</strong>, <u>underlined</u> or <span style="color:blue">blue</span>.</p></li>
+<li><p>Render your Quarto document by clicking the Render button with the blue arrow in the toolbar. Once the HTML file is generated, open it in a web browser. Does the document look as you expected? Iterate on your document until it meets your desired format and appearance.</p></li>
 </ol>
+</section>
+<section id="extra" class="level2">
+<h2 class="anchored" data-anchor-id="extra">Extra</h2>
+<ol start="28" type="1">
+<li><strong>Mac</strong> If you want to render your document to a PDF you need to install <code>tinyex</code>.</li>
+</ol>
+<p>Go to https://quarto.org/docs/download/ and install Quarto.</p>
+<p>In the top of your console window, switch to <strong>Terminal</strong>. (If the Terminal is not there go to <em>Tools</em> → <em>Terminal</em> → <em>New Terminal</em>.) Write <code>quarto install tinytex</code> in the terminal and press enter. When it has completed and gives the message <em>Installation successful</em>, change the YAML in the every top of your Quarto document from <code>format: html</code> to <code>format: pdf</code>. Save and render your Quarto document again and review the PDF file.</p>
 </section>
 <section id="lessons-learnt" class="level2">
 <h2 class="anchored" data-anchor-id="lessons-learnt">Lessons learnt</h2>

@@ -87,7 +87,7 @@ relative_path <- "/Data/climate.xlsx"
 ```
 
 ```{r eval=FALSE}
-setwd("~/Desktop/Stuff/Courses/GreatestCourse/FromExceltoR/Script")
+setwd("~/Desktop/Stuff/Courses/GreatestCourse/FromExceltoR/Scripts")
 relative_path <- "../Data/climate.xlsx"
 ```
 
