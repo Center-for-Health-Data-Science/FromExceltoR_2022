@@ -125,6 +125,28 @@ crohns %>%
 
 Note we haven't saved anything here, we just get output to the console sorted in a certain way. This helps us to check if the data looks correct and get an impression.
 
+`arrange` is used to impose a sort on the passed column
+
+```{r}
+crohns %>% 
+  arrange(age)
+```
+
+```{r}
+#reverse sort
+crohns %>% 
+  arrange(desc(age))
+```
+
+
+```{r}
+#sort by two (or more!) columns
+crohns %>% 
+  arrange(sex, desc(age))
+```
+
+Just like with `count` earlier this is not a permanent sort and does not change the order of rows in the original tibble, `crohns`. **Without assignment (`<-`)** tidyverse commands only display the result, not save it.  
+
 ## Filtering data (selecting rows) with `filter()`
 
 How we subset dataset into subsets we find interesting. For example only female patients:
